@@ -18,7 +18,7 @@ DATA_DIR = ROOT / "data"
 HISTORY_DIR = DATA_DIR / "history"
 TZ = ZoneInfo("Asia/Shanghai")
 
-HEADERS = {
+# Public-data collector; no portfolio amounts or account data are stored here.\nHEADERS = {
     "Accept": "*/*",
     "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.7",
     "Cache-Control": "no-cache",
