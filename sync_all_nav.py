@@ -192,27 +192,46 @@ async def get_text(client: httpx.AsyncClient, url: str, attempts: int = 3):
 
 
 async def fetch_recent_history(client: httpx.AsyncClient, sem: asyncio.Semaphore, code: str, days: int = 10):
+    """Fetch recent formal NAV rows without downloading the fund's entire history."""
+    url = "https://api.fund.eastmoney.com/f10/lsjz"
+    params = {
+        "fundCode": code,
+        "pageIndex": "1",
+        "pageSize": str(days),
+        "startDate": "",
+        "endDate": "",
+        "_": str(int(datetime.now().timestamp() * 1000)),
+    }
+    headers = dict(HEADERS)
+    headers["Referer"] = f"https://fundf10.eastmoney.com/jjjz_{code}.html"
+
+    last = None
     async with sem:
-        url = f"https://fund.eastmoney.com/pingzhongdata/{code}.js?v={int(datetime.now().timestamp() * 1000)}"
-        text = await get_text(client, url)
-
-    name_match = re.search(r'var\s+fS_name\s*=\s*["\'](.*?)["\']\s*;', text, re.S)
-    name = name_match.group(1).strip() if name_match else code
-
-    trend_match = re.search(r"var\s+Data_netWorthTrend\s*=\s*(\[.*?\]);", text, re.S)
-    if not trend_match:
-        return code, name, []
-
-    trend = json.loads(trend_match.group(1))
-    out = []
-    for point in trend[-days:]:
-        unit_nav = number(point.get("y"))
-        ts = point.get("x")
-        if unit_nav is None or ts is None:
-            continue
-        nav_date = datetime.fromtimestamp(float(ts) / 1000.0, TZ).strftime("%Y-%m-%d")
-        out.append({"nav_date": nav_date, "unit_nav": unit_nav})
-    return code, name, out
+        for i in range(3):
+            try:
+                r = await client.get(url, params=params, headers=headers, timeout=20.0)
+                r.raise_for_status()
+                obj = r.json()
+                rows = ((obj.get("Data") or {}).get("LSJZList") or [])
+                out = []
+                for item in rows:
+                    nav_date = str(item.get("FSRQ") or "").strip()
+                    unit_nav = number(item.get("DWJZ"))
+                    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", nav_date) or unit_nav is None:
+                        continue
+                    out.append(
+                        {
+                            "nav_date": nav_date,
+                            "unit_nav": unit_nav,
+                            "accum_nav": number(item.get("LJJZ")),
+                        }
+                    )
+                return code, code, out
+            except Exception as exc:
+                last = exc
+                if i + 1 < 3:
+                    await asyncio.sleep(0.8 * (2**i))
+    raise last
 
 
 async def repair_delayed_funds(
@@ -266,7 +285,7 @@ async def repair_delayed_funds(
                 "nav_date": latest_obs["nav_date"],
                 "unit_nav": latest_obs["unit_nav"],
                 "accum_nav": None,
-                "source": "eastmoney:pingzhongdata-repair",
+                "source": "eastmoney:lsjz-repair",
             }
 
         for obs in observations:
@@ -279,8 +298,8 @@ async def repair_delayed_funds(
                 "type": fund_type,
                 "nav_date": nav_date,
                 "unit_nav": obs["unit_nav"],
-                "accum_nav": existing.get("accum_nav") if existing else None,
-                "source": "eastmoney:pingzhongdata-repair",
+                "accum_nav": obs.get("accum_nav") if obs.get("accum_nav") is not None else (existing.get("accum_nav") if existing else None),
+                "source": "eastmoney:lsjz-repair",
             }
 
     print(f"Backfill completed; request errors: {errors}")
