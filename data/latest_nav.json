@@ -1,5 +1,6 @@
 {
-  "generated_at": "2026-09-23T20:05:05+08:00",
+  "generated_at": "2026-09-23T20:12:59+08:00",
+  "query_mode": "configured",
   "fund_count": 44,
   "official_nav_found": 44,
   "source_conflicts": 0,
@@ -186,7 +187,7 @@
     },
     {
       "code": "016532",
-      "name": "嘉实纳斯达克100ETF发起联接(QDII)人民币A",
+      "name": "嘉实纳斯达克100ETF发起联接(QDII)A人民币",
       "nav_date": "2026-09-22",
       "unit_nav": 2.2518,
       "source": "eastmoney:pingzhongdata",
@@ -258,7 +259,7 @@
     },
     {
       "code": "017937",
-      "name": "易方达中证医疗ETF联接A",
+      "name": "易方达中证医疗ETF联接发起式A",
       "nav_date": "2026-09-22",
       "unit_nav": 0.782,
       "source": "eastmoney:pingzhongdata",
@@ -342,7 +343,7 @@
     },
     {
       "code": "019524",
-      "name": "华泰柏瑞纳斯达克100ETF发起式联接（QDII）A",
+      "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)A",
       "nav_date": "2026-09-22",
       "unit_nav": 1.7066,
       "source": "eastmoney:pingzhongdata",
@@ -378,7 +379,7 @@
     },
     {
       "code": "021457",
-      "name": "易方达恒生港股通红利低波动ETF联接发起式A",
+      "name": "易方达港股通红利低波ETF联接A",
       "nav_date": "2026-09-22",
       "unit_nav": 1.1577,
       "source": "eastmoney:pingzhongdata",
@@ -462,7 +463,7 @@
     },
     {
       "code": "160213",
-      "name": "国泰纳斯达克100指数(QDII)",
+      "name": "国泰纳斯达克100指数",
       "nav_date": "2026-09-21",
       "unit_nav": 4.606,
       "source": "eastmoney:pingzhongdata",
@@ -474,7 +475,7 @@
     },
     {
       "code": "161130",
-      "name": "易方达纳斯达克100ETF联接(QDII-LOF)A",
+      "name": "易方达纳斯达克100ETF联接(QDII-LOF)A(人民币)",
       "nav_date": "2026-09-22",
       "unit_nav": 4.6034,
       "source": "eastmoney:pingzhongdata",
