@@ -226,7 +226,7 @@ async def fetch_recent_history(client: httpx.AsyncClient, sem: asyncio.Semaphore
                             "accum_nav": number(item.get("LJJZ")),
                         }
                     )
-                return code, code, out
+                return code, None, out
             except Exception as exc:
                 last = exc
                 if i + 1 < 3:
@@ -362,7 +362,7 @@ async def main():
     now = datetime.now(TZ)
     latest_payload = {
         "generated_at": now.isoformat(timespec="seconds"),
-        "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from pingzhongdata",
+        "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
         "fund_count": len(latest_rows),
         "newest_bulk_nav_date": max(bulk_dates) if bulk_dates else None,
         "funds": latest_rows,
