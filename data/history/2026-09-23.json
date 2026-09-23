@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-09-23T20:12:59+08:00",
+  "generated_at": "2026-09-23T20:21:58+08:00",
   "query_mode": "configured",
+  "request_id": null,
   "fund_count": 44,
   "official_nav_found": 44,
   "source_conflicts": 0,
@@ -260,60 +261,60 @@
     {
       "code": "017937",
       "name": "易方达中证医疗ETF联接发起式A",
-      "nav_date": "2026-09-22",
-      "unit_nav": 0.782,
+      "nav_date": "2026-09-23",
+      "unit_nav": 0.7844,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.782
+        0.7844
       ],
       "error": null
     },
     {
       "code": "018043",
       "name": "天弘纳斯达克100指数发起(QDII)A",
-      "nav_date": "2026-09-21",
-      "unit_nav": 2.0911,
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.1066,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.0911
+        2.1066
       ],
       "error": null
     },
     {
       "code": "018044",
       "name": "天弘纳斯达克100指数发起(QDII)C",
-      "nav_date": "2026-09-21",
-      "unit_nav": 2.0733,
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.0886,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.0733
+        2.0886
       ],
       "error": null
     },
     {
       "code": "019118",
       "name": "景顺长城纳斯达克科技ETF联接(QDII)E人民币",
-      "nav_date": "2026-09-21",
-      "unit_nav": 2.9881,
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.9976,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.9881
+        2.9976
       ],
       "error": null
     },
     {
       "code": "019172",
       "name": "摩根纳斯达克100指数(QDII)人民币A",
-      "nav_date": "2026-09-21",
-      "unit_nav": 1.7999,
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.813,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.7999
+        1.813
       ],
       "error": null
     },
