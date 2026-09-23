@@ -215,9 +215,12 @@ async def main():
     ok = [x for x in rows if x["unit_nav"] is not None]
     conflicts = [x for x in rows if x["source_conflict"]]
 
+    request_id = os.getenv("REQUEST_ID", "").strip() or None
+
     payload = {
         "generated_at": now.isoformat(timespec="seconds"),
         "query_mode": "manual" if manual_query else "configured",
+        "request_id": request_id if manual_query else None,
         "fund_count": len(rows),
         "official_nav_found": len(ok),
         "source_conflicts": len(conflicts),
