@@ -1,0 +1,536 @@
+{
+  "generated_at": "2026-09-23T18:26:33+08:00",
+  "fund_count": 44,
+  "official_nav_found": 44,
+  "source_conflicts": 0,
+  "funds": [
+    {
+      "code": "000218",
+      "name": "国泰黄金ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 3.3625,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        3.3625
+      ],
+      "error": null
+    },
+    {
+      "code": "000311",
+      "name": "景顺长城沪深300指数增强A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.782,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.782
+      ],
+      "error": null
+    },
+    {
+      "code": "000480",
+      "name": "东方红新动力混合A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 6.265,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        6.265
+      ],
+      "error": null
+    },
+    {
+      "code": "000628",
+      "name": "大成高鑫股票A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 4.8579,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        4.8579
+      ],
+      "error": null
+    },
+    {
+      "code": "005051",
+      "name": "摩根标普港股通低波红利指数A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.2367,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.2367
+      ],
+      "error": null
+    },
+    {
+      "code": "005613",
+      "name": "摩根富时发达市场REITs指数(QDII)人民币A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.4707,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.4707
+      ],
+      "error": null
+    },
+    {
+      "code": "006594",
+      "name": "博道中证500增强C",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.5848,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.5848
+      ],
+      "error": null
+    },
+    {
+      "code": "007721",
+      "name": "天弘标普500发起(QDII-FOF)A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.2714,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.2714
+      ],
+      "error": null
+    },
+    {
+      "code": "007722",
+      "name": "天弘标普500发起(QDII-FOF)C",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.2291,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.2291
+      ],
+      "error": null
+    },
+    {
+      "code": "008163",
+      "name": "南方标普红利低波50ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.0349,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.0349
+      ],
+      "error": null
+    },
+    {
+      "code": "008928",
+      "name": "宏利消费红利指数A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.3797,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.3797
+      ],
+      "error": null
+    },
+    {
+      "code": "010771",
+      "name": "天弘国证消费100指数增强发起A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.0833,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.0833
+      ],
+      "error": null
+    },
+    {
+      "code": "013127",
+      "name": "汇添富恒生科技ETF联接发起式(QDII)A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 0.6977,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        0.6977
+      ],
+      "error": null
+    },
+    {
+      "code": "013308",
+      "name": "易方达恒生科技ETF联接(QDII)A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.0539,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.0539
+      ],
+      "error": null
+    },
+    {
+      "code": "016452",
+      "name": "南方纳斯达克100指数发起(QDII)A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.3528,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.3528
+      ],
+      "error": null
+    },
+    {
+      "code": "016532",
+      "name": "嘉实纳斯达克100ETF发起联接(QDII)人民币A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.2518,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.2518
+      ],
+      "error": null
+    },
+    {
+      "code": "017091",
+      "name": "景顺长城纳斯达克科技ETF联接(QDII)A人民币",
+      "nav_date": "2026-09-21",
+      "unit_nav": 3.0094,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        3.0094
+      ],
+      "error": null
+    },
+    {
+      "code": "017436",
+      "name": "华宝纳斯达克精选股票发起式(QDII)A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.4835,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.4835
+      ],
+      "error": null
+    },
+    {
+      "code": "017437",
+      "name": "华宝纳斯达克精选股票发起式(QDII)C",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.4504,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.4504
+      ],
+      "error": null
+    },
+    {
+      "code": "017641",
+      "name": "摩根标普500指数(QDII)人民币A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.7181,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.7181
+      ],
+      "error": null
+    },
+    {
+      "code": "017644",
+      "name": "博道中证1000指数增强A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.7872,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.7872
+      ],
+      "error": null
+    },
+    {
+      "code": "017937",
+      "name": "易方达中证医疗ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 0.782,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        0.782
+      ],
+      "error": null
+    },
+    {
+      "code": "018043",
+      "name": "天弘纳斯达克100指数发起(QDII)A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.0911,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.0911
+      ],
+      "error": null
+    },
+    {
+      "code": "018044",
+      "name": "天弘纳斯达克100指数发起(QDII)C",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.0733,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.0733
+      ],
+      "error": null
+    },
+    {
+      "code": "019118",
+      "name": "景顺长城纳斯达克科技ETF联接(QDII)E人民币",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.9881,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.9881
+      ],
+      "error": null
+    },
+    {
+      "code": "019172",
+      "name": "摩根纳斯达克100指数(QDII)人民币A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.7999,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.7999
+      ],
+      "error": null
+    },
+    {
+      "code": "019441",
+      "name": "万家纳斯达克100指数发起式(QDII)A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.7349,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.7349
+      ],
+      "error": null
+    },
+    {
+      "code": "019442",
+      "name": "万家纳斯达克100指数发起式(QDII)C",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.7234,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.7234
+      ],
+      "error": null
+    },
+    {
+      "code": "019524",
+      "name": "华泰柏瑞纳斯达克100ETF发起式联接（QDII）A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.6942,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.6942
+      ],
+      "error": null
+    },
+    {
+      "code": "019736",
+      "name": "宝盈纳斯达克100指数发起(QDII)A人民币",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.5297,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.5297
+      ],
+      "error": null
+    },
+    {
+      "code": "019737",
+      "name": "宝盈纳斯达克100指数发起(QDII)C人民币",
+      "nav_date": "2026-09-21",
+      "unit_nav": 1.5189,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.5189
+      ],
+      "error": null
+    },
+    {
+      "code": "021457",
+      "name": "易方达恒生港股通红利低波动ETF联接发起式A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.1577,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.1577
+      ],
+      "error": null
+    },
+    {
+      "code": "021550",
+      "name": "博时中证红利低波动100ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.0692,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.0692
+      ],
+      "error": null
+    },
+    {
+      "code": "022523",
+      "name": "天弘标普500发起(QDII-FOF)D",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.2286,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.2286
+      ],
+      "error": null
+    },
+    {
+      "code": "022525",
+      "name": "天弘纳斯达克100指数发起(QDII)D",
+      "nav_date": "2026-09-21",
+      "unit_nav": 2.0691,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.0691
+      ],
+      "error": null
+    },
+    {
+      "code": "024772",
+      "name": "摩根标普港股通低波红利ETF发起式联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.0061,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.0061
+      ],
+      "error": null
+    },
+    {
+      "code": "025958",
+      "name": "南方中证全指自由现金流ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 0.9399,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        0.9399
+      ],
+      "error": null
+    },
+    {
+      "code": "050025",
+      "name": "博时标普500ETF联接A",
+      "nav_date": "2026-09-21",
+      "unit_nav": 5.6324,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        5.6324
+      ],
+      "error": null
+    },
+    {
+      "code": "160213",
+      "name": "国泰纳斯达克100指数(QDII)",
+      "nav_date": "2026-09-21",
+      "unit_nav": 4.606,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        4.606
+      ],
+      "error": null
+    },
+    {
+      "code": "161130",
+      "name": "易方达纳斯达克100ETF联接(QDII-LOF)A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 4.6034,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        4.6034
+      ],
+      "error": null
+    },
+    {
+      "code": "162412",
+      "name": "华宝医疗ETF联接A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 0.6058,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        0.6058
+      ],
+      "error": null
+    },
+    {
+      "code": "167301",
+      "name": "方正富邦中证保险A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 1.081,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        1.081
+      ],
+      "error": null
+    },
+    {
+      "code": "501060",
+      "name": "中金中证优选300指数(LOF)A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 2.3746,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        2.3746
+      ],
+      "error": null
+    },
+    {
+      "code": "519002",
+      "name": "华安安信消费混合A",
+      "nav_date": "2026-09-22",
+      "unit_nav": 5.291,
+      "source": "eastmoney:pingzhongdata",
+      "source_conflict": false,
+      "same_day_source_values": [
+        5.291
+      ],
+      "error": null
+    }
+  ]
+}
