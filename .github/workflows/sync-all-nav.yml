@@ -1,0 +1,59 @@
+name: Sync full-market fund NAV history
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Asia/Shanghai 23:47 on weekdays.
+    - cron: "47 15 * * 1-5"
+    # Asia/Shanghai 02:17 Tue-Sat, catches late disclosures and backfills prior NAV dates.
+    - cron: "17 18 * * 1-5"
+  push:
+    branches:
+      - main
+    paths:
+      - "sync_all_nav.py"
+      - "requirements.txt"
+      - ".github/workflows/sync-all-nav.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fund-data-write
+  cancel-in-progress: false
+
+jobs:
+  sync-all-nav:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Sync full-market NAV history
+        run: python sync_all_nav.py
+
+      - name: Commit data changes
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all/
+          if git diff --cached --quiet; then
+            echo "No full-market NAV changes."
+            exit 0
+          fi
+          git commit -m "data: sync full-market fund NAV history"
+          git pull --rebase origin main
+          git push origin HEAD:main
