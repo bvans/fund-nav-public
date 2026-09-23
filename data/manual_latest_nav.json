@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-23T20:21:48+08:00",
+  "generated_at": "2026-09-23T20:30:06+08:00",
   "query_mode": "manual",
-  "request_id": "bootstrap-20260923",
-  "fund_count": 3,
-  "official_nav_found": 3,
+  "request_id": "chatgpt-20260923-122947",
+  "fund_count": 1,
+  "official_nav_found": 1,
   "source_conflicts": 0,
   "funds": [
     {
@@ -15,30 +15,6 @@
       "source_conflict": false,
       "same_day_source_values": [
         3.3625
-      ],
-      "error": null
-    },
-    {
-      "code": "110022",
-      "name": "易方达消费行业股票",
-      "nav_date": "2026-09-22",
-      "unit_nav": 2.828,
-      "source": "eastmoney:pingzhongdata",
-      "source_conflict": false,
-      "same_day_source_values": [
-        2.828
-      ],
-      "error": null
-    },
-    {
-      "code": "162412",
-      "name": "华宝医疗ETF联接A",
-      "nav_date": "2026-09-22",
-      "unit_nav": 0.6058,
-      "source": "eastmoney:pingzhongdata",
-      "source_conflict": false,
-      "same_day_source_values": [
-        0.6058
       ],
       "error": null
     }
