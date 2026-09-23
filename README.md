@@ -22,7 +22,7 @@
 
 - AKShare `fund_name_em()`：全市场基金目录
 - AKShare `fund_open_fund_daily_em()`：东方财富/天天基金全量开放式基金净值
-- 东方财富 `pingzhongdata/{code}.js`：QDII/延迟披露基金最近历史回补
+- 东方财富正式历史净值接口 `f10/lsjz`：QDII/延迟披露基金最近历史回补
 
 ### 历史文件
 
