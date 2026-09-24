@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T03:31:39+08:00",
+  "generated_at": "2026-09-25T05:36:44+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23443,
   "newest_bulk_nav_date": "2026-09-24",
@@ -195541,7 +195541,7 @@
     {
       "code": "029182",
       "name": "财通恒利债券C",
-      "type": "债券型-长债",
+      "type": "",
       "nav_date": "2026-09-24",
       "unit_nav": 1.0506,
       "accum_nav": 1.0506,
