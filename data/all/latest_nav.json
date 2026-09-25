@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T05:36:44+08:00",
+  "generated_at": "2026-09-26T03:35:54+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23443,
+  "fund_count": 23453,
   "newest_bulk_nav_date": "2026-09-24",
   "funds": [
     {
@@ -187016,6 +187016,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "027147",
+      "name": "新华北证50成份指数A",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "027148",
+      "name": "新华北证50成份指数C",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "027149",
       "name": "平安周期精选混合发起式A",
       "type": "混合型-偏股",
@@ -193847,6 +193865,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "028455",
+      "name": "建信丰和债券A",
+      "type": "债券型-混合二级",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028456",
+      "name": "建信丰和债券C",
+      "type": "债券型-混合二级",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "028457",
       "name": "长盛聚益债券C",
       "type": "债券型-混合二级",
@@ -194423,6 +194459,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "028611",
+      "name": "国富标普港股通低波红利指数发起式A",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028612",
+      "name": "国富标普港股通低波红利指数发起式C",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "028613",
       "name": "广发中证细分化工产业主题指数发起式A",
       "type": "指数型-股票",
@@ -194438,6 +194492,24 @@
       "nav_date": "2026-09-24",
       "unit_nav": 0.9637,
       "accum_nav": 0.9637,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028623",
+      "name": "太平嘉瑞90天持有债券A",
+      "type": "债券型-混合二级",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028624",
+      "name": "太平嘉瑞90天持有债券C",
+      "type": "债券型-混合二级",
+      "nav_date": "2026-09-24",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
       "source": "eastmoney:bulk-daily"
     },
     {
@@ -195251,6 +195323,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "028922",
+      "name": "景顺长城价值优选混合A",
+      "type": "混合型-偏股",
+      "nav_date": "2026-09-24",
+      "unit_nav": 0.9999,
+      "accum_nav": 0.9999,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028923",
+      "name": "景顺长城价值优选混合C",
+      "type": "混合型-偏股",
+      "nav_date": "2026-09-24",
+      "unit_nav": 0.9999,
+      "accum_nav": 0.9999,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "028934",
       "name": "华夏中证港股通信息技术综合ETF发起式联接A",
       "type": "指数型-股票",
@@ -195541,7 +195631,7 @@
     {
       "code": "029182",
       "name": "财通恒利债券C",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-09-24",
       "unit_nav": 1.0506,
       "accum_nav": 1.0506,
