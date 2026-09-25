@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T03:35:54+08:00",
+  "generated_at": "2026-09-26T05:40:44+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23453,
   "newest_bulk_nav_date": "2026-09-24",
@@ -195640,7 +195640,7 @@
     {
       "code": "029183",
       "name": "银华同力精选混合C",
-      "type": "",
+      "type": "混合型-偏股",
       "nav_date": "2026-09-24",
       "unit_nav": 1.4403,
       "accum_nav": 1.4403,
@@ -195649,7 +195649,7 @@
     {
       "code": "029194",
       "name": "银华多元机遇混合C",
-      "type": "",
+      "type": "混合型-偏股",
       "nav_date": "2026-09-24",
       "unit_nav": 0.5983,
       "accum_nav": 0.5983,
@@ -195667,7 +195667,7 @@
     {
       "code": "029227",
       "name": "新华增盈回报债券C",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-24",
       "unit_nav": 1.3711,
       "accum_nav": 1.3711,
