@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01T06:23:04+08:00",
+  "generated_at": "2026-10-02T04:36:01+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23530,
+  "fund_count": 23532,
   "newest_bulk_nav_date": "2026-09-30",
   "funds": [
     {
@@ -107960,24 +107960,6 @@
       "source": "eastmoney:bulk-daily"
     },
     {
-      "code": "016654",
-      "name": "鹏扬景泽一年持有混合A",
-      "type": "混合型-偏债",
-      "nav_date": "2026-09-30",
-      "unit_nav": 1.1115,
-      "accum_nav": 1.1115,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "016655",
-      "name": "鹏扬景泽一年持有混合C",
-      "type": "混合型-偏债",
-      "nav_date": "2026-09-30",
-      "unit_nav": 1.0962,
-      "accum_nav": 1.0962,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
       "code": "016656",
       "name": "汇丰晋信丰宁三个月定开债券A",
       "type": "债券型-长债",
@@ -187943,6 +187925,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "027278",
+      "name": "华夏中证港股通互联网ETF联接A",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "027279",
+      "name": "华夏中证港股通互联网ETF联接C",
+      "type": "指数型-股票",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "027280",
       "name": "招商价值慧选混合发起式C",
       "type": "混合型-偏股",
@@ -192749,6 +192749,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "028004",
+      "name": "鑫元金鑫回报混合A",
+      "type": "混合型-偏债",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028014",
+      "name": "鑫元金鑫回报混合C",
+      "type": "混合型-偏债",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "028041",
       "name": "宏利港股数字经济混合发起(QDII)A",
       "type": "QDII-混合偏股",
@@ -196027,7 +196045,7 @@
     {
       "code": "029069",
       "name": "融通通玺债券C",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-09-30",
       "unit_nav": 1.0624,
       "accum_nav": 1.0624,
@@ -196189,7 +196207,7 @@
     {
       "code": "029374",
       "name": "华夏鼎泓债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.4102,
       "accum_nav": 1.4102,
@@ -196198,7 +196216,7 @@
     {
       "code": "029375",
       "name": "招商安阳债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.0204,
       "accum_nav": 1.0204,
@@ -196216,7 +196234,7 @@
     {
       "code": "029378",
       "name": "农银瑞泽添利债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.1398,
       "accum_nav": 1.1398,
@@ -196225,7 +196243,7 @@
     {
       "code": "029379",
       "name": "富国稳健增强债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.355,
       "accum_nav": 1.355,
@@ -196234,7 +196252,7 @@
     {
       "code": "029380",
       "name": "长信利保债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.2352,
       "accum_nav": 1.2352,
@@ -196261,7 +196279,7 @@
     {
       "code": "029384",
       "name": "国联融盛双盈债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.1121,
       "accum_nav": 1.1121,
@@ -196279,7 +196297,7 @@
     {
       "code": "029386",
       "name": "金鹰年年邮享一年持有债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.1292,
       "accum_nav": 1.1292,
@@ -196288,7 +196306,7 @@
     {
       "code": "029387",
       "name": "国泰鑫享稳健6个月滚动持有债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.1695,
       "accum_nav": 1.1695,
@@ -196306,7 +196324,7 @@
     {
       "code": "029389",
       "name": "中银添利债券发起Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.4852,
       "accum_nav": 1.4852,
@@ -196315,7 +196333,7 @@
     {
       "code": "029390",
       "name": "建信稳健惠享债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.5133,
       "accum_nav": 1.5133,
@@ -196324,7 +196342,7 @@
     {
       "code": "029391",
       "name": "华安乾煜债券发起式Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.1823,
       "accum_nav": 1.1823,
@@ -196333,7 +196351,7 @@
     {
       "code": "029392",
       "name": "鹏华稳健添利债券Y",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-09-30",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
