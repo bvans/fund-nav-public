@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T06:46:58+08:00",
+  "generated_at": "2026-10-03T04:11:09+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23532,
   "newest_bulk_nav_date": "2026-09-30",
@@ -195415,7 +195415,7 @@
     {
       "code": "028815",
       "name": "广发稳健多策略三个月持有混合(FOF)A",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-09-29",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -195424,7 +195424,7 @@
     {
       "code": "028816",
       "name": "广发稳健多策略三个月持有混合(FOF)C",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-09-29",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -196144,7 +196144,7 @@
     {
       "code": "029211",
       "name": "路博迈安瑞63个月封闭式债券",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-09-30",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -196153,7 +196153,7 @@
     {
       "code": "029215",
       "name": "财信聚鑫63个月封闭式债券",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-09-30",
       "unit_nav": 1.0001,
       "accum_nav": 1.0001,
