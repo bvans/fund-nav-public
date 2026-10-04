@@ -69,3 +69,5 @@ jobs:
           git commit -m "data: backfill fund NAV history"
           git pull --rebase origin main
           git push origin HEAD:main
+
+# rerun after fund list expansion
