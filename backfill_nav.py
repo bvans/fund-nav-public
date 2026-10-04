@@ -111,7 +111,7 @@ async def fetch_one(client: httpx.AsyncClient, sem: asyncio.Semaphore, code: str
             for item in rows:
                 d = str(item.get("FSRQ") or "")
                 nav = number(item.get("DWJZ"))
-                if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", d) and nav is not None:
+                if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) and nav is not None:
                     out_by_date[d] = {
                         "code": code,
                         "name": "",
@@ -155,6 +155,8 @@ async def main_async(args):
         merge_history(nav_date, by_date[nav_date])
 
     print(f"History dates written/merged: {len(by_date)}")
+    if not by_date:
+        raise RuntimeError("backfill produced zero NAV dates; refusing silent success")
     if failures:
         for code, err in failures:
             print(f"ERROR {code}: {err}")
