@@ -26,3 +26,5 @@ jobs:
           git commit -m "data: rebuild JD 2026 NAV extract"
           git pull --rebase origin main
           git push origin HEAD:main
+
+# rerun after alias fix
