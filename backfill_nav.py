@@ -6,7 +6,7 @@ import asyncio
 import gzip
 import json
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 import httpx
@@ -69,40 +69,50 @@ def merge_history(nav_date: str, records: list[dict]):
     merged["code"] = merged["code"].astype(str).str.zfill(6)
     write_csv_gz(path, merged.sort_values("code").reset_index(drop=True))
 
-async def fetch_one(client: httpx.AsyncClient, sem: asyncio.Semaphore, code: str, start: str, end: str):
+async def fetch_window(client, code: str, start: str, end: str):
     url = "https://api.fund.eastmoney.com/f10/lsjz"
     headers = dict(HEADERS)
     headers["Referer"] = f"https://fundf10.eastmoney.com/jjjz_{code}.html"
-    page = 1
-    out = []
-    async with sem:
-        while True:
-            params = {
-                "fundCode": code, "pageIndex": str(page), "pageSize": "100",
-                "startDate": start, "endDate": end,
-                "_": str(int(datetime.now().timestamp() * 1000)),
-            }
-            last = None
-            for attempt in range(4):
-                try:
-                    r = await client.get(url, params=params, headers=headers, timeout=30)
-                    r.raise_for_status()
-                    obj = r.json()
-                    break
-                except Exception as exc:
-                    last = exc
-                    if attempt == 3:
-                        raise RuntimeError(f"{code} page {page}: {last}") from last
-                    await asyncio.sleep(1.2 * (2 ** attempt))
-            data = obj.get("Data") or {}
+    params = {
+        "fundCode": code, "pageIndex": "1", "pageSize": "100",
+        "startDate": start, "endDate": end,
+        "_": str(int(datetime.now().timestamp() * 1000)),
+    }
+    last = None
+    for attempt in range(4):
+        try:
+            r = await client.get(url, params=params, headers=headers, timeout=30)
+            r.raise_for_status()
+            data = (r.json().get("Data") or {})
             rows = data.get("LSJZList") or []
-            if not rows:
-                break
+            return rows, int(data.get("TotalCount") or len(rows))
+        except Exception as exc:
+            last = exc
+            if attempt == 3:
+                raise RuntimeError(f"{code} {start}..{end}: {last}") from last
+            await asyncio.sleep(1.2 * (2 ** attempt))
+
+async def fetch_one(client: httpx.AsyncClient, sem: asyncio.Semaphore, code: str, start: str, end: str):
+    # Eastmoney lsjz effectively caps broad date-range queries. Split into small
+    # calendar windows so early history is not silently truncated to the last ~20 rows.
+    begin = date.fromisoformat(start)
+    finish = date.fromisoformat(end)
+    out_by_date = {}
+    async with sem:
+        cursor = begin
+        while cursor <= finish:
+            window_end = min(cursor + timedelta(days=27), finish)
+            rows, total = await fetch_window(client, code, cursor.isoformat(), window_end.isoformat())
+            if total > 100:
+                raise RuntimeError(
+                    f"{code} window {cursor}..{window_end} returned TotalCount={total}; "
+                    "reduce window size instead of silently truncating"
+                )
             for item in rows:
                 d = str(item.get("FSRQ") or "")
                 nav = number(item.get("DWJZ"))
-                if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d) and nav is not None:
-                    out.append({
+                if re.fullmatch(r"\\d{4}-\\d{2}-\\d{2}", d) and nav is not None:
+                    out_by_date[d] = {
                         "code": code,
                         "name": "",
                         "type": "",
@@ -110,13 +120,10 @@ async def fetch_one(client: httpx.AsyncClient, sem: asyncio.Semaphore, code: str
                         "unit_nav": nav,
                         "accum_nav": number(item.get("LJJZ")),
                         "source": "eastmoney:lsjz-backfill",
-                    })
-            total = int(data.get("TotalCount") or len(out))
-            if page * 100 >= total:
-                break
-            page += 1
-            await asyncio.sleep(0.15)
-    return code, out
+                    }
+            cursor = window_end + timedelta(days=1)
+            await asyncio.sleep(0.12)
+    return code, [out_by_date[d] for d in sorted(out_by_date)]
 
 async def main_async(args):
     codes = parse_codes(args.codes)
