@@ -1,0 +1,46 @@
+name: Process JD fund statement
+
+on:
+  workflow_dispatch:
+    inputs:
+      zip_url:
+        description: "HTTPS URL to the encrypted statement ZIP (do not use a public repository URL)"
+        required: true
+        type: string
+      zip_password:
+        description: "ZIP extraction password (workflow inputs are NOT secrets)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  process-statement:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Download statement
+        env:
+          ZIP_URL: ${{ inputs.zip_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$ZIP_URL" in https://*) ;; *) echo "Only HTTPS URLs are accepted"; exit 1;; esac
+          curl --fail --location --silent --show-error --max-time 120 --output statement.zip "$ZIP_URL"
+      - name: Extract statement
+        env:
+          ZIP_PASSWORD: ${{ inputs.zip_password }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p statement
+          7z x -y -o./statement -p"$ZIP_PASSWORD" statement.zip >/dev/null
+          rm -f statement.zip
+      - name: Inspect extracted filenames only
+        shell: bash
+        run: |
+          find statement -type f -printf '%f\n'
+          echo "Statement extracted. No personal statement data is committed or uploaded."
