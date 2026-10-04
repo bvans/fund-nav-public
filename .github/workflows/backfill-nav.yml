@@ -1,0 +1,71 @@
+name: Backfill fund NAV history
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Start date (YYYY-MM-DD)"
+        required: true
+        default: "2026-01-01"
+      end:
+        description: "End date (YYYY-MM-DD)"
+        required: true
+        default: "2026-07-23"
+      codes:
+        description: "Fund codes separated by comma/space; blank = funds.json"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "backfill_nav.py"
+      - ".github/workflows/backfill-nav.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fund-data-write
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Backfill formal NAV history
+        env:
+          INPUT_START: ${{ github.event.inputs.start || '2026-01-01' }}
+          INPUT_END: ${{ github.event.inputs.end || '2026-07-23' }}
+          INPUT_CODES: ${{ github.event.inputs.codes || '' }}
+        shell: bash
+        run: |
+          args=(--start "$INPUT_START" --end "$INPUT_END")
+          if [[ -n "$INPUT_CODES" ]]; then
+            args+=(--codes "$INPUT_CODES")
+          fi
+          python backfill_nav.py "${args[@]}"
+      - name: Commit backfilled history
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all/history/
+          if git diff --cached --quiet; then
+            echo "No backfill changes."
+            exit 0
+          fi
+          git commit -m "data: backfill fund NAV history"
+          git pull --rebase origin main
+          git push origin HEAD:main
