@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T06:42:21+08:00",
+  "generated_at": "2026-10-08T04:50:54+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23532,
+  "fund_count": 23534,
   "newest_bulk_nav_date": "2026-09-30",
   "funds": [
     {
@@ -185948,10 +185948,10 @@
       "code": "027017",
       "name": "中航祥瑞债券发起C",
       "type": "债券型-混合二级",
-      "nav_date": "2026-09-29",
+      "nav_date": "2026-09-30",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
-      "source": "eastmoney:lsjz-repair"
+      "source": "eastmoney:bulk-daily"
     },
     {
       "code": "027018",
@@ -191945,6 +191945,24 @@
       "nav_date": "2026-09-30",
       "unit_nav": 1.0079,
       "accum_nav": 1.0079,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "027844",
+      "name": "民生加银多元稳信配置3个月持有混合(FOF)A",
+      "type": "FOF-稳健型",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "027845",
+      "name": "民生加银多元稳信配置3个月持有混合(FOF)C",
+      "type": "FOF-稳健型",
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
       "source": "eastmoney:bulk-daily"
     },
     {
