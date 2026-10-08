@@ -1,10 +1,12 @@
 {
-  "generated_at": "2026-10-08T01:32:11+08:00",
+  "generated_at": "2026-10-08T19:06:38+08:00",
   "query_mode": "configured",
   "request_id": null,
   "fund_count": 51,
   "official_nav_found": 51,
   "source_conflicts": 0,
+  "stale_warning_count": 50,
+  "stale_after_calendar_days": 5,
   "funds": [
     {
       "code": "000218",
@@ -16,7 +18,68 @@
       "same_day_source_values": [
         3.2708
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:15+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 3.2708,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 3.2708,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 3.2708,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "000311",
@@ -28,7 +91,68 @@
       "same_day_source_values": [
         2.678
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:12+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.678,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.678,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:11+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.678,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:11+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "000480",
@@ -40,7 +164,68 @@
       "same_day_source_values": [
         6.123
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:17+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 6.123,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:43+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 6.123,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:43+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 6.123,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "000628",
@@ -52,7 +237,68 @@
       "same_day_source_values": [
         4.8233
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:24+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 4.8233,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 4.8233,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 4.8233,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "001061",
@@ -64,7 +310,68 @@
       "same_day_source_values": [
         1.4188
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:26+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:40+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4188,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:40+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:07+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4188,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:07+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:25+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4188,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:25+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "003547",
@@ -76,7 +383,68 @@
       "same_day_source_values": [
         1.0503
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:22+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:37+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0503,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:37+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:59+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0503,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:59+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0503,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "005051",
@@ -88,7 +456,68 @@
       "same_day_source_values": [
         1.2456
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:04+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2456,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:42+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2456,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:42+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:03+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2456,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:03+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "005613",
@@ -100,7 +529,68 @@
       "same_day_source_values": [
         1.4407
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:18+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4407,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:18+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4407,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.4407,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "006594",
@@ -112,7 +602,68 @@
       "same_day_source_values": [
         2.4551
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:15+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:25+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4551,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:25+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4551,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:11+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4551,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:11+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "007721",
@@ -124,7 +675,68 @@
       "same_day_source_values": [
         2.2444
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:13+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:25+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2444,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:25+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2444,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:12+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2444,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:12+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "007722",
@@ -136,7 +748,68 @@
       "same_day_source_values": [
         2.2025
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:25+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2025,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:59+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2025,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:59+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2025,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "007751",
@@ -148,7 +821,68 @@
       "same_day_source_values": [
         1.234
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:26+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:39+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.234,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:39+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:02+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.234,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:02+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.234,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "008163",
@@ -160,7 +894,68 @@
       "same_day_source_values": [
         1.0491
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:06+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:18+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0491,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:18+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:44+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0491,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:44+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0491,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "008928",
@@ -172,7 +967,68 @@
       "same_day_source_values": [
         1.3765
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:14+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.3765,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.3765,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:08+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.3765,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:08+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "010771",
@@ -184,7 +1040,68 @@
       "same_day_source_values": [
         1.0056
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:12+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0056,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0056,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:10+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0056,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:10+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "013127",
@@ -196,7 +1113,68 @@
       "same_day_source_values": [
         0.6694
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:14+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6694,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:52+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6694,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:52+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:13+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6694,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:13+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "013308",
@@ -208,7 +1186,68 @@
       "same_day_source_values": [
         1.0106
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:08+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:19+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0106,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:19+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:47+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0106,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:47+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0106,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "016452",
@@ -220,19 +1259,141 @@
       "same_day_source_values": [
         2.3393
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:13+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.3393,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.3393,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:50+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:12+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.3393,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:12+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "016532",
       "name": "嘉实纳斯达克100ETF发起联接(QDII)A人民币",
-      "nav_date": "2026-09-29",
-      "unit_nav": 2.2234,
+      "nav_date": "2026-09-30",
+      "unit_nav": 2.2262,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2234
+        2.2262
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:20+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:32+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.2262,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:32+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.2262,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.2262,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017091",
@@ -244,43 +1405,251 @@
       "same_day_source_values": [
         2.9758
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:17+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9758,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9758,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9758,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017423",
       "name": "天弘中证同业存单AAA指数7天持有",
-      "nav_date": "2026-09-30",
-      "unit_nav": 1.0716,
+      "nav_date": "2026-10-08",
+      "unit_nav": 1.0718,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.0716
+        1.0718
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:05:43+08:00",
+      "days_since_nav": 0,
+      "stale_warning": false,
+      "freshness_status": "recent",
+      "retry_count": 0,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:41+08:00",
+          "status": "ok",
+          "nav_date": "2026-10-08",
+          "unit_nav": 1.0718,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:41+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017436",
       "name": "华宝纳斯达克精选股票发起式(QDII)A",
-      "nav_date": "2026-09-29",
-      "unit_nav": 2.4225,
+      "nav_date": "2026-09-30",
+      "unit_nav": 2.4191,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.4225
+        2.4191
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:10+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4191,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:47+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4191,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:47+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.4191,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017437",
       "name": "华宝纳斯达克精选股票发起式(QDII)C",
-      "nav_date": "2026-09-29",
-      "unit_nav": 2.39,
+      "nav_date": "2026-09-30",
+      "unit_nav": 2.3867,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.39
+        2.3867
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:20+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3867,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:53+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3867,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:53+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3867,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017641",
@@ -292,7 +1661,68 @@
       "same_day_source_values": [
         1.6974
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:15+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.6974,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.6974,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.6974,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017644",
@@ -304,7 +1734,68 @@
       "same_day_source_values": [
         1.6979
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:06+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:19+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6979,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:19+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:45+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6979,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:45+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6979,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "017937",
@@ -316,7 +1807,68 @@
       "same_day_source_values": [
         0.7838
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:07+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.7838,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:46+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.7838,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:46+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.7838,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "018043",
@@ -328,7 +1880,68 @@
       "same_day_source_values": [
         2.0792
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0792,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0792,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0792,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "018044",
@@ -340,7 +1953,68 @@
       "same_day_source_values": [
         2.0613
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:32+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0613,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:32+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0613,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:19+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0613,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:19+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "018099",
@@ -352,7 +2026,68 @@
       "same_day_source_values": [
         1.043
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:22+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:38+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.043,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:38+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.043,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.043,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019118",
@@ -364,7 +2099,68 @@
       "same_day_source_values": [
         2.9547
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:22+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9547,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9547,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.9547,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019172",
@@ -376,7 +2172,68 @@
       "same_day_source_values": [
         1.7899
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:27+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7899,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:27+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:53+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7899,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:53+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:16+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7899,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:16+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019260",
@@ -388,7 +2245,68 @@
       "same_day_source_values": [
         1.2318
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2318,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:58+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2318,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:58+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.2318,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019441",
@@ -400,7 +2318,68 @@
       "same_day_source_values": [
         1.7252
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:18+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:27+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7252,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:27+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7252,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7252,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019442",
@@ -412,19 +2391,141 @@
       "same_day_source_values": [
         1.7138
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:15+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:28+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7138,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:28+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7138,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.7138,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019524",
       "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)A",
-      "nav_date": "2026-09-29",
-      "unit_nav": 1.6844,
+      "nav_date": "2026-09-30",
+      "unit_nav": 1.6868,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.6844
+        1.6868
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:19+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:30+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6868,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:30+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6868,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:18+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.6868,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:18+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019736",
@@ -436,7 +2537,68 @@
       "same_day_source_values": [
         1.5228
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:16+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:30+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5228,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:30+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5228,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:55+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5228,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:15+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "019737",
@@ -448,7 +2610,68 @@
       "same_day_source_values": [
         1.5119
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:25+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5119,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5119,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:05+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 1.5119,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "021457",
@@ -460,7 +2683,68 @@
       "same_day_source_values": [
         1.1616
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:10+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:23+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1616,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:23+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1616,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:09+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1616,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:09+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "021550",
@@ -472,7 +2756,68 @@
       "same_day_source_values": [
         1.0796
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:11+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0796,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:24+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0796,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:49+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:10+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0796,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:10+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "022459",
@@ -484,7 +2829,68 @@
       "same_day_source_values": [
         1.1962
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:24+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:38+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1962,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:38+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1962,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.1962,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "022523",
@@ -496,7 +2902,68 @@
       "same_day_source_values": [
         2.2019
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:21+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:33+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2019,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:33+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2019,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:57+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.2019,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:20+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "022525",
@@ -508,7 +2975,68 @@
       "same_day_source_values": [
         2.0571
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:22+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:33+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0571,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:33+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:58+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0571,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:58+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 2.0571,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "024772",
@@ -520,7 +3048,68 @@
       "same_day_source_values": [
         1.0133
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:14+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0133,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0133,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:51+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:13+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.0133,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:13+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "025958",
@@ -532,7 +3121,68 @@
       "same_day_source_values": [
         0.9269
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:09+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.9269,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.9269,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:09+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.9269,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:09+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "050025",
@@ -544,7 +3194,68 @@
       "same_day_source_values": [
         5.563
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:27+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 5.563,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:31+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 5.563,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:06+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:25+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 5.563,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:25+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "160213",
@@ -556,7 +3267,68 @@
       "same_day_source_values": [
         4.579
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:25+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:28+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.579,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:28+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.579,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.579,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:21+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "161130",
@@ -568,7 +3340,68 @@
       "same_day_source_values": [
         4.5452
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:38+08:00",
+      "days_since_nav": 9,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.5452,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:34+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.5452,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:06:00+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:36+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-29",
+          "unit_nav": 4.5452,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:36+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "162412",
@@ -580,7 +3413,68 @@
       "same_day_source_values": [
         0.6073
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:20+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6073,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:45+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6073,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:45+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 0.6073,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:14+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "167301",
@@ -592,7 +3486,68 @@
       "same_day_source_values": [
         1.057
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:11+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.057,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:17+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:44+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.057,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:44+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:04+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 1.057,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:04+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "501060",
@@ -604,7 +3559,68 @@
       "same_day_source_values": [
         2.3485
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:09+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:22+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3485,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:22+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3485,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:48+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:08+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 2.3485,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:08+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     },
     {
       "code": "519002",
@@ -616,7 +3632,68 @@
       "same_day_source_values": [
         5.067
       ],
-      "error": null
+      "error": null,
+      "checked_at": "2026-10-08T19:06:30+08:00",
+      "days_since_nav": 8,
+      "stale_warning": true,
+      "freshness_status": "delayed_or_holiday",
+      "retry_count": 2,
+      "source_checks": [
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 5.067,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 1,
+          "checked_at": "2026-10-08T19:05:26+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 5.067,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 2,
+          "checked_at": "2026-10-08T19:05:56+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        },
+        {
+          "source": "eastmoney:pingzhongdata",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "ok",
+          "nav_date": "2026-09-30",
+          "unit_nav": 5.067,
+          "error": null
+        },
+        {
+          "source": "eastmoney:fundgz-dwjz",
+          "attempt": 3,
+          "checked_at": "2026-10-08T19:06:22+08:00",
+          "status": "no_data",
+          "nav_date": null,
+          "unit_nav": null,
+          "error": null
+        }
+      ]
     }
   ]
 }
