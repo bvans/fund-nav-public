@@ -1,2 +1,2 @@
-﻿code,name,nav_date,unit_nav,source,source_conflict,error
-016532,嘉实纳斯达克100ETF发起联接(QDII)A人民币,2026-09-30,2.2262,eastmoney:pingzhongdata,False,
+﻿code,name,nav_date,unit_nav,source,source_conflict,error,checked_at,days_since_nav,stale_warning,freshness_status,retry_count
+016532,嘉实纳斯达克100ETF发起联接(QDII)A人民币,2026-09-30,2.2262,eastmoney:pingzhongdata,False,,2026-10-08T19:05:28+08:00,8,True,delayed_or_holiday,2
