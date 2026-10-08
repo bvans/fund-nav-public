@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09T04:53:16+08:00",
+  "generated_at": "2026-10-09T07:27:15+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23538,
+  "fund_count": 23540,
   "newest_bulk_nav_date": "2026-10-08",
   "funds": [
     {
@@ -195987,6 +195987,24 @@
       "unit_nav": 0.9975,
       "accum_nav": 0.9975,
       "source": "eastmoney:lsjz-repair"
+    },
+    {
+      "code": "029014",
+      "name": "永赢中证科创创业人工智能ETF发起联接A",
+      "type": "指数型-股票",
+      "nav_date": "2026-10-08",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029015",
+      "name": "永赢中证科创创业人工智能ETF发起联接C",
+      "type": "指数型-股票",
+      "nav_date": "2026-10-08",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
     },
     {
       "code": "029016",
