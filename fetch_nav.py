@@ -18,6 +18,10 @@ FUNDS_FILE = ROOT / "funds.json"
 DATA_DIR = ROOT / "data"
 HISTORY_DIR = DATA_DIR / "history"
 TZ = ZoneInfo("Asia/Shanghai")
+# Calendar days, not exchange trading days: a warning/retry, not an assertion
+# that a delayed QDII NAV is wrong (holidays can exceed this interval).
+STALE_AFTER_DAYS = max(1, int(os.getenv("NAV_RETRY_AGE_DAYS", "5")))
+STALE_RETRIES = min(3, max(0, int(os.getenv("NAV_STALE_RETRIES", "2")))
 
 # Public-data collector; no portfolio amounts or account data are stored here.
 HEADERS = {
@@ -161,16 +165,73 @@ def choose(candidates):
     return chosen
 
 
-async def fetch_one(client, sem, code):
-    async with sem:
-        a, b = await asyncio.gather(
-            fetch_pingzhong(client, code),
-            fetch_fundgz(client, code),
-            return_exceptions=True,
-        )
+def nav_age_days(nav_date, today=None):
+    """Elapsed calendar days; do not assume QDII market holidays are trading days."""
+    if not nav_date:
+        return None
+    try:
+        nav_day = datetime.strptime(nav_date, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+    return max(0, ((today or datetime.now(TZ).date()) - nav_day).days)
 
-    candidates = [None if isinstance(x, Exception) else x for x in (a, b)]
+
+async def observe_source(client, fetcher, source, code, attempt):
+    """Record both success and failure for every source and every attempt."""
+    checked_at = datetime.now(TZ).isoformat(timespec="seconds")
+    observation = {
+        "source": source,
+        "attempt": attempt,
+        "checked_at": checked_at,
+        "status": "no_data",
+        "nav_date": None,
+        "unit_nav": None,
+        "error": None,
+    }
+    try:
+        candidate = await fetcher(client, code)
+        if candidate:
+            observation.update(
+                status="ok",
+                nav_date=candidate["nav_date"],
+                unit_nav=candidate["unit_nav"],
+            )
+        return candidate, observation
+    except Exception as exc:
+        observation.update(status="error", error=str(exc)[:300])
+        return None, observation
+
+
+async def fetch_one(client, sem, code):
+    candidates = []
+    observations = []
+    attempts = 0
+
+    for attempt in range(1, STALE_RETRIES + 2):
+        attempts = attempt
+        async with sem:
+            checks = await asyncio.gather(
+                observe_source(
+                    client, fetch_pingzhong, "eastmoney:pingzhongdata", code, attempt
+                ),
+                observe_source(
+                    client, fetch_fundgz, "eastmoney:fundgz-dwjz", code, attempt
+                ),
+            )
+        candidates.extend(candidate for candidate, _ in checks if candidate)
+        observations.extend(observation for _, observation in checks)
+
+        picked = choose(candidates)
+        age = nav_age_days(picked["nav_date"]) if picked else None
+        if picked and age is not None and age < STALE_AFTER_DAYS:
+            break
+        # Extra fetches can detect late updates, but cannot force a holiday NAV.
+        if attempt <= STALE_RETRIES:
+            await asyncio.sleep(1.5 * attempt)
+
     picked = choose(candidates)
+    age = nav_age_days(picked["nav_date"]) if picked else None
+    delayed = age is not None and age >= STALE_AFTER_DAYS
     row = {
         "code": code,
         "name": None,
@@ -180,18 +241,23 @@ async def fetch_one(client, sem, code):
         "source_conflict": False,
         "same_day_source_values": [],
         "error": None,
+        "checked_at": datetime.now(TZ).isoformat(timespec="seconds"),
+        "days_since_nav": age,
+        "stale_warning": delayed,
+        "freshness_status": (
+            "no_nav" if picked is None else "delayed_or_holiday" if delayed else "recent"
+        ),
+        "retry_count": attempts - 1,
+        "source_checks": observations,
     }
-
     if picked:
         row.update(picked)
     else:
-        errors = [str(x) for x in (a, b) if isinstance(x, Exception)]
-        row["error"] = "; ".join(errors) or "no official NAV returned"
-
+        errors = [x["error"] for x in observations if x["error"]]
+        row["error"] = "; ".join(errors[-2:]) or "no official NAV returned"
     if not row["name"]:
         row["name"] = code
     return row
-
 
 async def main():
     try:
@@ -214,6 +280,7 @@ async def main():
     now = datetime.now(TZ)
     ok = [x for x in rows if x["unit_nav"] is not None]
     conflicts = [x for x in rows if x["source_conflict"]]
+    delayed = [x for x in rows if x["stale_warning"]]
 
     request_id = os.getenv("REQUEST_ID", "").strip() or None
 
@@ -224,6 +291,8 @@ async def main():
         "fund_count": len(rows),
         "official_nav_found": len(ok),
         "source_conflicts": len(conflicts),
+        "stale_warning_count": len(delayed),
+        "stale_after_calendar_days": STALE_AFTER_DAYS,
         "funds": rows,
     }
 
@@ -233,6 +302,31 @@ async def main():
     else:
         latest_json = DATA_DIR / "latest_nav.json"
         latest_csv = DATA_DIR / "latest_nav.csv"
+
+    # Audit every run; manual and scheduled paths are separate for safe Git pushes.
+    audit_dir = DATA_DIR / "fetch_logs" / ("manual" if manual_query else "configured")
+    audit_dir.mkdir(parents=True, exist_ok=True)
+    audit_file = audit_dir / f"{now.strftime('%Y-%m-%d')}.jsonl"
+    audit_entry = {
+        "collected_at": payload["generated_at"],
+        "query_mode": payload["query_mode"],
+        "request_id": payload["request_id"],
+        "stale_after_calendar_days": STALE_AFTER_DAYS,
+        "funds": [
+            {
+                "code": x["code"],
+                "nav_date": x["nav_date"],
+                "unit_nav": x["unit_nav"],
+                "source": x["source"],
+                "freshness_status": x["freshness_status"],
+                "retry_count": x["retry_count"],
+                "source_checks": x["source_checks"],
+            }
+            for x in rows
+        ],
+    }
+    with audit_file.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(audit_entry, ensure_ascii=False) + "\n")
 
     body = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
     latest_json.write_text(body, encoding="utf-8")
@@ -250,6 +344,11 @@ async def main():
             "source",
             "source_conflict",
             "error",
+            "checked_at",
+            "days_since_nav",
+            "stale_warning",
+            "freshness_status",
+            "retry_count",
         ]
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
         w.writeheader()
@@ -268,6 +367,12 @@ async def main():
     missing = [x["code"] for x in rows if x["unit_nav"] is None]
     if missing:
         print("missing:", ", ".join(missing))
+    if delayed:
+        print(
+            f"WARNING: delayed/holiday NAV (calendar days >= {STALE_AFTER_DAYS}):",
+            ", ".join(f"{x['code']}({x['days_since_nav']}d)" for x in delayed),
+        )
+    print(f"source audit: {audit_file.relative_to(ROOT)}")
 
     # Fail only when the public sources are broadly unavailable.
     if len(ok) < max(1, int(len(rows) * 0.90)):
