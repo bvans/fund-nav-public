@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-07T21:15:28+08:00",
+  "generated_at": "2026-10-08T19:00:20+08:00",
   "query_mode": "manual",
-  "request_id": "chatgpt-20261007-501312",
+  "request_id": "chatgpt-20261008-1858-016532",
   "fund_count": 1,
   "official_nav_found": 1,
   "source_conflicts": 0,
   "funds": [
     {
-      "code": "501312",
-      "name": "华宝海外科技股票(QDII-LOF)A",
-      "nav_date": "2026-09-29",
-      "unit_nav": 2.4893,
+      "code": "016532",
+      "name": "嘉实纳斯达克100ETF发起联接(QDII)A人民币",
+      "nav_date": "2026-09-30",
+      "unit_nav": 2.2262,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.4893
+        2.2262
       ],
       "error": null
     }
