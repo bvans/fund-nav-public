@@ -21,7 +21,7 @@ TZ = ZoneInfo("Asia/Shanghai")
 # Calendar days, not exchange trading days: a warning/retry, not an assertion
 # that a delayed QDII NAV is wrong (holidays can exceed this interval).
 STALE_AFTER_DAYS = max(1, int(os.getenv("NAV_RETRY_AGE_DAYS", "5")))
-STALE_RETRIES = min(3, max(0, int(os.getenv("NAV_STALE_RETRIES", "2")))
+STALE_RETRIES = min(3, max(0, int(os.getenv("NAV_STALE_RETRIES", "2"))))
 
 # Public-data collector; no portfolio amounts or account data are stored here.
 HEADERS = {
