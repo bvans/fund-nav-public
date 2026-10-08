@@ -62,15 +62,20 @@ data/all/history/2026/2026-09-23.csv.gz
 
 ## 2. 重点基金增强查询
 
-`funds.json` 维护重点基金代码。当前配置为 44 只持仓基金。
+`funds.json` 维护重点基金代码。以 `funds.json` 的当前条目为准。
 
-工作日北京时间 **18:37、20:37、22:37、23:37** 自动刷新：
+预定工作日北京时间 **18:37、20:37、22:37、23:37** 自动刷新（GitHub Actions 定时任务可能延迟或偶尔跳过；应查看 Actions 运行历史确认是否实际执行）：
 
 - 主源：东方财富/天天基金 `pingzhongdata/{code}.js`
 - 校验/降级：`fundgz.1234567.com.cn` 的 `dwjz + jzrq`
 - 只使用正式净值，不把盘中估值 `gsz` 当净值
 - 每条数据保留 `nav_date`
 - 同日两来源冲突时标记 `source_conflict=true`
+- 若最新正式净值距采集日达到 **5 个自然日**（默认阈值），对两个来源各额外重试 2 次（间隔 1.5s/3s），每次请求的 URL 都带缓存破坏参数；没有公布新的正式净值时绝不编造当天净值
+- 因 QDII 延迟披露、长假均可能导致超出阈值，`stale_warning=true`、`freshness_status=delayed_or_holiday` 只是**提示核查**，不等于确认数据错误
+- 输出增加 `checked_at`、`days_since_nav`、`retry_count`、`source_checks`；每个数据源和每轮尝试分别记录 `source`、`checked_at`、`status`、`nav_date`、`unit_nav`、`error`
+- 每次运行都追加一条审计日志到 `data/fetch_logs/configured/YYYY-MM-DD.jsonl`；手动查询写到 `data/fetch_logs/manual/YYYY-MM-DD.jsonl`，按北京时间日期归档
+- 环境变量：`NAV_RETRY_AGE_DAYS`（默认 5 个自然日）和 `NAV_STALE_RETRIES`（默认 2，最多 3）可调整阈值及额外重试次数
 
 输出：
 
@@ -105,7 +110,7 @@ data/manual_latest_nav.json
 data/manual_latest_nav.csv
 ```
 
-不会覆盖重点基金日常数据。
+不会覆盖重点基金日常数据。按需查询也会执行延迟重试、记录两个来源的返回日期/数值/采集时间和独立的审计日志。
 
 ## 示例
 
