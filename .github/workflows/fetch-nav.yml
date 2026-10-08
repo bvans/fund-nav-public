@@ -45,6 +45,9 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -r requirements.txt
 
+      - name: Test NAV retry and audit logic
+        run: python -m unittest discover -s tests -v
+
       - name: Fetch official NAVs
         env:
           FUND_CODES: ${{ inputs.codes }}
