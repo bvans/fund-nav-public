@@ -1,0 +1,77 @@
+name: Backfill 160716 five-year NAV
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/backfill-160716-five-years.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fund-data-write
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Backfill five years of fund 160716
+        run: python backfill_nav.py --start 2021-10-09 --end 2026-10-09 --codes 160716
+      - name: Export consolidated CSV and coverage summary
+        shell: bash
+        run: |
+          python - <<'PY'
+          import gzip, io, json
+          from pathlib import Path
+          import pandas as pd
+          start, end, code = "2021-10-09", "2026-10-09", "160716"
+          base = Path("data/all/history")
+          rows = []
+          for p in sorted(base.glob("20??/*.csv.gz")):
+              d = p.name[:-7]
+              if start <= d <= end:
+                  df = pd.read_csv(p, compression="gzip", dtype={"code": str})
+                  match = df.loc[df["code"].str.zfill(6) == code]
+                  if not match.empty:
+                      rows.extend(match.to_dict("records"))
+          if not rows:
+              raise SystemExit("No NAV records for 160716; refusing empty export")
+          out = pd.DataFrame(rows).sort_values("nav_date").drop_duplicates("nav_date")
+          target = Path("data/exports")
+          target.mkdir(parents=True, exist_ok=True)
+          out.to_csv(target / "160716_2021-10-09_2026-10-09.csv", index=False, encoding="utf-8-sig")
+          summary = {
+              "code": code, "requested_start": start, "requested_end": end,
+              "first_nav_date": str(out["nav_date"].iloc[0]),
+              "last_nav_date": str(out["nav_date"].iloc[-1]),
+              "nav_records": len(out),
+              "unit_nav_missing": int(out["unit_nav"].isna().sum()),
+              "accum_nav_missing": int(out["accum_nav"].isna().sum()),
+          }
+          (target / "160716_5y_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n")
+          print(json.dumps(summary, ensure_ascii=False))
+          PY
+      - name: Commit historical NAV and export
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all/history/ data/exports/160716_2021-10-09_2026-10-09.csv data/exports/160716_5y_summary.json
+          if git diff --cached --quiet; then
+            echo "No changed data"
+            exit 0
+          fi
+          git commit -m "data: backfill 160716 NAV for 2021-2026"
+          git pull --rebase origin main
+          git push origin HEAD:main
