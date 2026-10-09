@@ -1,0 +1,26 @@
+{
+  "code": "160716",
+  "requested_start": "2016-10-09",
+  "requested_end": "2026-10-09",
+  "first_nav_date": "2016-10-10",
+  "last_nav_date": "2026-10-09",
+  "total_records": 2434,
+  "prior_five_year_records": 1220,
+  "recent_five_year_records": 1214,
+  "missing_unit_nav": 0,
+  "missing_accum_nav": 0,
+  "records_by_year": {
+    "2016": 60,
+    "2017": 245,
+    "2018": 245,
+    "2019": 244,
+    "2020": 243,
+    "2021": 243,
+    "2022": 243,
+    "2023": 243,
+    "2024": 242,
+    "2025": 243,
+    "2026": 183
+  },
+  "date_gaps_gt_15_calendar_days": []
+}
