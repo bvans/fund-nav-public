@@ -1,0 +1,112 @@
+name: Backfill 160716 prior five years and consolidate decade
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/backfill-160716-2016-2021.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fund-data-write
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Backfill prior five years
+        run: python backfill_nav.py --start 2016-10-09 --end 2021-10-08 --codes 160716
+      - name: Export prior five years and full decade
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, gzip, json
+          from datetime import date
+          from collections import Counter
+          from pathlib import Path
+
+          code = "160716"
+          start = "2016-10-09"
+          middle = "2021-10-09"
+          end = "2026-10-09"
+          source = Path("data/all/history")
+          outdir = Path("data/exports")
+          outdir.mkdir(parents=True, exist_ok=True)
+          by_date = {}
+          for year in range(2016, 2027):
+              year_dir = source / str(year)
+              if not year_dir.exists():
+                  continue
+              for p in sorted(year_dir.glob("*.csv.gz")):
+                  date_text = p.name.removesuffix(".csv.gz")
+                  if not (start <= date_text <= end):
+                      continue
+                  with gzip.open(p, "rt", encoding="utf-8-sig", newline="") as fp:
+                      reader = csv.DictReader(fp)
+                      for row in reader:
+                          if str(row.get("code") or "").zfill(6) == code and row.get("nav_date") == date_text:
+                              by_date[date_text] = row
+          rows = [by_date[d] for d in sorted(by_date)]
+          prior = [r for r in rows if r["nav_date"] < middle]
+          recent = [r for r in rows if r["nav_date"] >= middle]
+          if len(prior) < 1000 or len(recent) < 1000:
+              raise SystemExit(f"Unexpected record count: prior={len(prior)}, recent={len(recent)}")
+          columns = ["code", "name", "type", "nav_date", "unit_nav", "accum_nav", "source"]
+          def emit_csv(name, data):
+              with (outdir / name).open("w", encoding="utf-8-sig", newline="") as fp:
+                  writer = csv.DictWriter(fp, fieldnames=columns, extrasaction="ignore")
+                  writer.writeheader()
+                  writer.writerows(data)
+          emit_csv("160716_2016-10-09_2021-10-08.csv", prior)
+          emit_csv("160716_2016-10-09_2026-10-09.csv", rows)
+          dates = [date.fromisoformat(r["nav_date"]) for r in rows]
+          gaps = [
+              {"start": dates[i-1].isoformat(), "end": dates[i].isoformat(), "days": (dates[i]-dates[i-1]).days}
+              for i in range(1, len(dates)) if (dates[i]-dates[i-1]).days > 15
+          ]
+          summary = {
+              "code": code,
+              "requested_start": start,
+              "requested_end": end,
+              "first_nav_date": rows[0]["nav_date"],
+              "last_nav_date": rows[-1]["nav_date"],
+              "total_records": len(rows),
+              "prior_five_year_records": len(prior),
+              "recent_five_year_records": len(recent),
+              "missing_unit_nav": sum(not r.get("unit_nav") for r in rows),
+              "missing_accum_nav": sum(not r.get("accum_nav") for r in rows),
+              "records_by_year": dict(sorted(Counter(r["nav_date"][:4] for r in rows).items())),
+              "date_gaps_gt_15_calendar_days": gaps
+          }
+          (outdir / "160716_10y_summary.json").write_text(
+              json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+          )
+          print(json.dumps(summary, ensure_ascii=False, indent=2))
+          if summary["missing_unit_nav"] or summary["missing_accum_nav"]:
+              raise SystemExit("Missing NAV values in decade export")
+      - name: Commit history and exports
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/all/history/ data/exports/160716_2016-10-09_2021-10-08.csv data/exports/160716_2016-10-09_2026-10-09.csv data/exports/160716_10y_summary.json
+          if git diff --cached --quiet; then
+            echo "No changed data"
+            exit 0
+          fi
+          git commit -m "data: backfill 160716 NAV for full decade"
+          git pull --rebase origin main
+          git push origin HEAD:main
