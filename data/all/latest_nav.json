@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T06:38:24+08:00",
+  "generated_at": "2026-10-13T08:51:45+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23555,
+  "fund_count": 23557,
   "newest_bulk_nav_date": "2026-10-12",
   "funds": [
     {
@@ -43046,18 +43046,18 @@
       "code": "007710",
       "name": "格林泓泰三个月定开债A",
       "type": "债券型-利率债",
-      "nav_date": "2026-10-12",
-      "unit_nav": 1.0507,
-      "accum_nav": null,
+      "nav_date": "2026-10-09",
+      "unit_nav": 1.0492,
+      "accum_nav": 1.2802,
       "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "007711",
       "name": "格林泓泰三个月定开债C",
       "type": "债券型-利率债",
-      "nav_date": "2026-10-12",
-      "unit_nav": 1.0487,
-      "accum_nav": null,
+      "nav_date": "2026-10-09",
+      "unit_nav": 1.0473,
+      "accum_nav": 1.2953,
       "source": "eastmoney:lsjz-repair"
     },
     {
@@ -112517,9 +112517,9 @@
       "code": "017448",
       "name": "格林泓盛一年定开债券发起式",
       "type": "债券型-信用债",
-      "nav_date": "2026-10-12",
-      "unit_nav": 1.0402,
-      "accum_nav": null,
+      "nav_date": "2026-10-09",
+      "unit_nav": 1.0387,
+      "accum_nav": 1.1162,
       "source": "eastmoney:lsjz-repair"
     },
     {
@@ -192598,7 +192598,7 @@
     {
       "code": "027969",
       "name": "交银惠享多资产六个月持有期混合(FOF)",
-      "type": "FOF-稳健型",
+      "type": "FOF-均衡型",
       "nav_date": "2026-10-09",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -194330,6 +194330,24 @@
       "nav_date": "2026-10-12",
       "unit_nav": 0.9984,
       "accum_nav": 0.9984,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028558",
+      "name": "中信保诚新材料混合发起式A",
+      "type": "混合型-偏股",
+      "nav_date": "2026-10-12",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028559",
+      "name": "中信保诚新材料混合发起式C",
+      "type": "混合型-偏股",
+      "nav_date": "2026-10-12",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
       "source": "eastmoney:bulk-daily"
     },
     {
