@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T03:03:28+08:00",
+  "generated_at": "2026-10-17T05:21:06+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23564,
   "newest_bulk_nav_date": "2026-10-16",
@@ -196666,7 +196666,7 @@
     {
       "code": "029446",
       "name": "永赢泓利债券D",
-      "type": "",
+      "type": "债券型-混合二级",
       "nav_date": "2026-10-16",
       "unit_nav": 1.0117,
       "accum_nav": 1.0117,
