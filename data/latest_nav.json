@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:59:45+08:00",
+  "generated_at": "2026-10-17T02:58:06+08:00",
   "query_mode": "configured",
   "request_id": null,
   "fund_count": 51,
@@ -19,8 +19,8 @@
         3.2493
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:12+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:54+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -28,7 +28,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 3.2493,
@@ -37,7 +37,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -56,8 +56,8 @@
         2.564
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:37+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:53+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -65,7 +65,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:52+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 2.564,
@@ -74,7 +74,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:52+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -93,8 +93,8 @@
         5.932
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:13+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:44+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -102,7 +102,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 5.932,
@@ -111,7 +111,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -130,8 +130,8 @@
         4.7441
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:27+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:51+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -139,7 +139,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:16+08:00",
+          "checked_at": "2026-10-17T02:57:50+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 4.7441,
@@ -148,7 +148,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:16+08:00",
+          "checked_at": "2026-10-17T02:57:50+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -167,8 +167,8 @@
         1.417
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:37+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:02+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -176,7 +176,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:35+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.417,
@@ -185,7 +185,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:35+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -204,8 +204,8 @@
         1.0538
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:45+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:01+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -213,7 +213,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:32+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.0538,
@@ -222,7 +222,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:32+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -233,15 +233,15 @@
     {
       "code": "005051",
       "name": "摩根标普港股通低波红利指数A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.2494,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.2463,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.2494
+        1.2463
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:27+08:00",
+      "checked_at": "2026-10-17T02:57:44+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -250,16 +250,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.2494,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.2463,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -278,8 +278,8 @@
         1.4345
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:16+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:57+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -287,7 +287,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.4345,
@@ -296,7 +296,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -315,8 +315,8 @@
         2.2418
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:22+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:53+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -324,7 +324,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:52+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 2.2418,
@@ -333,7 +333,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:52+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -352,8 +352,8 @@
         2.2587
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:18+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:54+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -361,7 +361,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:18+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.2587,
@@ -370,7 +370,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:18+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -389,8 +389,8 @@
         2.2162
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:33+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:59+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -398,7 +398,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:57:58+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.2162,
@@ -407,7 +407,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:57:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -426,8 +426,8 @@
         1.2272
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:35+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:02+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -435,7 +435,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:33+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.2272,
@@ -444,7 +444,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:33+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -463,8 +463,8 @@
         1.0749
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:13+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:45+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -472,7 +472,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.0749,
@@ -481,7 +481,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -500,8 +500,8 @@
         1.3714
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:12+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:44+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -509,7 +509,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.3714,
@@ -518,7 +518,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -537,8 +537,8 @@
         0.9092
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:15+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:55+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -546,7 +546,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.9092,
@@ -555,7 +555,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -574,8 +574,8 @@
         0.6464
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:17+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:47+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -583,7 +583,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.6464,
@@ -592,7 +592,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -611,8 +611,8 @@
         0.9756
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:14+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:52+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -620,7 +620,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:13+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.9756,
@@ -629,7 +629,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:13+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -648,8 +648,8 @@
         2.3039
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:18+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:52+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -657,7 +657,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:51+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.3039,
@@ -666,7 +666,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:17+08:00",
+          "checked_at": "2026-10-17T02:57:51+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -685,8 +685,8 @@
         2.1909
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:32+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:58+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -694,7 +694,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:29+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.1909,
@@ -703,7 +703,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:29+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -722,8 +722,8 @@
         2.8666
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:31+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:58+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -731,7 +731,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:26+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.8666,
@@ -740,7 +740,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:26+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -759,8 +759,8 @@
         1.0722
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:38+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:02+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -768,7 +768,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:35+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.0722,
@@ -777,7 +777,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:35+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -796,8 +796,8 @@
         2.3242
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:15+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:50+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -805,7 +805,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:46+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.3242,
@@ -814,7 +814,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:14+08:00",
+          "checked_at": "2026-10-17T02:57:46+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -833,8 +833,8 @@
         2.2926
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:19+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:54+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -842,7 +842,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:18+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.2926,
@@ -851,7 +851,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:18+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -870,8 +870,8 @@
         1.7088
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:23+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:54+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -879,7 +879,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:22+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.7088,
@@ -888,7 +888,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:22+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -907,8 +907,8 @@
         1.5676
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:14+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:46+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -916,7 +916,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.5676,
@@ -925,7 +925,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:12+08:00",
+          "checked_at": "2026-10-17T02:57:44+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -944,8 +944,8 @@
         0.7266
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:14+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:47+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -953,7 +953,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:13+08:00",
+          "checked_at": "2026-10-17T02:57:45+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.7266,
@@ -962,7 +962,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:13+08:00",
+          "checked_at": "2026-10-17T02:57:45+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -981,8 +981,8 @@
         2.0474
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:29+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:01+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -990,7 +990,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.0474,
@@ -999,7 +999,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1018,8 +1018,8 @@
         2.0297
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:31+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:02+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1027,7 +1027,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:28+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.0297,
@@ -1036,7 +1036,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:28+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1055,8 +1055,8 @@
         1.01
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:37+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:01+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1064,7 +1064,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:32+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.01,
@@ -1073,7 +1073,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:32+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1092,8 +1092,8 @@
         2.846
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:32+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:57+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1101,7 +1101,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.846,
@@ -1110,7 +1110,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1129,8 +1129,8 @@
         1.7634
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:23+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:55+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1138,7 +1138,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:22+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.7634,
@@ -1147,7 +1147,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:22+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1166,8 +1166,8 @@
         1.2345
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:33+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:01+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1175,7 +1175,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.2345,
@@ -1184,7 +1184,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:58:00+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1203,8 +1203,8 @@
         1.6994
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:24+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:55+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1212,7 +1212,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:23+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.6994,
@@ -1221,7 +1221,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:23+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1240,8 +1240,8 @@
         1.688
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:24+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:56+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1249,7 +1249,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:23+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.688,
@@ -1258,7 +1258,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:23+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1277,8 +1277,8 @@
         1.6587
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:25+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:56+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1286,7 +1286,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:24+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.6587,
@@ -1295,7 +1295,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:24+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1314,8 +1314,8 @@
         1.4996
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:28+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:56+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1323,7 +1323,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:25+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.4996,
@@ -1332,7 +1332,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:25+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1351,8 +1351,8 @@
         1.4887
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:26+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:56+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1360,7 +1360,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:25+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 1.4887,
@@ -1369,7 +1369,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:25+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1388,8 +1388,8 @@
         1.166
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:17+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:51+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1397,7 +1397,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:50+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.166,
@@ -1406,7 +1406,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:50+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1425,8 +1425,8 @@
         1.103
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:17+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:53+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1434,7 +1434,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:16+08:00",
+          "checked_at": "2026-10-17T02:57:51+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.103,
@@ -1443,7 +1443,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:16+08:00",
+          "checked_at": "2026-10-17T02:57:51+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1462,8 +1462,8 @@
         1.1317
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:35+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:58:01+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1471,7 +1471,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:33+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.1317,
@@ -1480,7 +1480,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:33+08:00",
+          "checked_at": "2026-10-17T02:58:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1499,8 +1499,8 @@
         2.2155
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:31+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:00+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1508,7 +1508,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:30+08:00",
+          "checked_at": "2026-10-17T02:57:58+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.2155,
@@ -1517,7 +1517,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:30+08:00",
+          "checked_at": "2026-10-17T02:57:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1536,8 +1536,8 @@
         2.0253
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:30+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:00+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1545,7 +1545,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:29+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 2.0253,
@@ -1554,7 +1554,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:29+08:00",
+          "checked_at": "2026-10-17T02:57:57+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1573,8 +1573,8 @@
         1.0141
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:20+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:54+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1582,7 +1582,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:19+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.0141,
@@ -1591,7 +1591,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:19+08:00",
+          "checked_at": "2026-10-17T02:57:53+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1610,8 +1610,8 @@
         0.9298
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:15+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:48+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1619,7 +1619,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.9298,
@@ -1628,7 +1628,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:47+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1647,8 +1647,8 @@
         5.6062
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:29+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:57:57+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1656,7 +1656,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 5.6062,
@@ -1665,7 +1665,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:27+08:00",
+          "checked_at": "2026-10-17T02:57:56+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1684,8 +1684,8 @@
         4.501
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:25+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:06+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1693,7 +1693,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:24+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 4.501,
@@ -1702,7 +1702,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:24+08:00",
+          "checked_at": "2026-10-17T02:57:55+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1721,8 +1721,8 @@
         4.4785
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:43+08:00",
-      "days_since_nav": 1,
+      "checked_at": "2026-10-17T02:58:00+08:00",
+      "days_since_nav": 2,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1730,7 +1730,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:57:59+08:00",
           "status": "ok",
           "nav_date": "2026-10-15",
           "unit_nav": 4.4785,
@@ -1739,7 +1739,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:31+08:00",
+          "checked_at": "2026-10-17T02:57:59+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1758,8 +1758,8 @@
         0.5636
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:12+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:47+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1767,7 +1767,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 0.5636,
@@ -1776,7 +1776,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1795,8 +1795,8 @@
         1.024
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:27+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:44+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1804,7 +1804,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 1.024,
@@ -1813,7 +1813,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:10+08:00",
+          "checked_at": "2026-10-17T02:57:42+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1832,8 +1832,8 @@
         2.3496
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:16+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:50+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1841,7 +1841,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:48+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 2.3496,
@@ -1850,7 +1850,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:15+08:00",
+          "checked_at": "2026-10-17T02:57:48+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1869,8 +1869,8 @@
         4.565
       ],
       "error": null,
-      "checked_at": "2026-10-16T22:59:22+08:00",
-      "days_since_nav": 0,
+      "checked_at": "2026-10-17T02:57:55+08:00",
+      "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1878,7 +1878,7 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:20+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "ok",
           "nav_date": "2026-10-16",
           "unit_nav": 4.565,
@@ -1887,7 +1887,7 @@
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-16T22:59:20+08:00",
+          "checked_at": "2026-10-17T02:57:54+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
