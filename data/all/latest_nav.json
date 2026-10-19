@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T04:45:06+08:00",
+  "generated_at": "2026-10-20T06:28:30+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23564,
   "newest_bulk_nav_date": "2026-10-19",
@@ -90962,9 +90962,9 @@
       "code": "014266",
       "name": "创金合信汇鑫一年定开债券发起",
       "type": "债券型-长债",
-      "nav_date": "2026-10-16",
+      "nav_date": "2026-10-19",
       "unit_nav": 1.0533,
-      "accum_nav": 1.142,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
@@ -196675,7 +196675,7 @@
     {
       "code": "029483",
       "name": "永赢汇享债券D",
-      "type": "债券型-混合二级",
+      "type": "",
       "nav_date": "2026-10-19",
       "unit_nav": 1.0984,
       "accum_nav": 1.0984,
