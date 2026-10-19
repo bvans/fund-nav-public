@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T02:58:06+08:00",
+  "generated_at": "2026-10-20T01:08:38+08:00",
   "query_mode": "configured",
   "request_id": null,
   "fund_count": 51,
@@ -11,15 +11,15 @@
     {
       "code": "000218",
       "name": "国泰黄金ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 3.2493,
+      "nav_date": "2026-10-19",
+      "unit_nav": 3.2472,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        3.2493
+        3.2472
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:54+08:00",
+      "checked_at": "2026-10-20T01:08:11+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -28,16 +28,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 3.2493,
+          "nav_date": "2026-10-19",
+          "unit_nav": 3.2472,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -48,15 +48,15 @@
     {
       "code": "000311",
       "name": "景顺长城沪深300指数增强A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 2.564,
+      "nav_date": "2026-10-19",
+      "unit_nav": 2.572,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.564
+        2.572
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:53+08:00",
+      "checked_at": "2026-10-20T01:08:11+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -65,16 +65,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:52+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 2.564,
+          "nav_date": "2026-10-19",
+          "unit_nav": 2.572,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:52+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -85,15 +85,15 @@
     {
       "code": "000480",
       "name": "东方红新动力混合A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 5.932,
+      "nav_date": "2026-10-19",
+      "unit_nav": 5.97,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        5.932
+        5.97
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:44+08:00",
+      "checked_at": "2026-10-20T01:08:12+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -102,16 +102,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 5.932,
+          "nav_date": "2026-10-19",
+          "unit_nav": 5.97,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -122,15 +122,15 @@
     {
       "code": "000628",
       "name": "大成高鑫股票A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 4.7441,
+      "nav_date": "2026-10-19",
+      "unit_nav": 4.7669,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        4.7441
+        4.7669
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:51+08:00",
+      "checked_at": "2026-10-20T01:08:10+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -139,16 +139,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:50+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 4.7441,
+          "nav_date": "2026-10-19",
+          "unit_nav": 4.7669,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:50+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -159,16 +159,16 @@
     {
       "code": "001061",
       "name": "华夏收益债券(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.417,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.4175,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.417
+        1.4175
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:02+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:38+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -176,16 +176,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:22+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.417,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.4175,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:22+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -196,7 +196,7 @@
     {
       "code": "003547",
       "name": "鹏华丰禄债券",
-      "nav_date": "2026-10-16",
+      "nav_date": "2026-10-19",
       "unit_nav": 1.0538,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
@@ -204,7 +204,7 @@
         1.0538
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:01+08:00",
+      "checked_at": "2026-10-20T01:08:21+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -213,16 +213,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:20+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
+          "nav_date": "2026-10-19",
           "unit_nav": 1.0538,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:20+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -233,15 +233,15 @@
     {
       "code": "005051",
       "name": "摩根标普港股通低波红利指数A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.2463,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.246,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.2463
+        1.246
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:44+08:00",
+      "checked_at": "2026-10-20T01:08:00+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -250,16 +250,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.2463,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.246,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -270,16 +270,16 @@
     {
       "code": "005613",
       "name": "摩根富时发达市场REITs指数(QDII)人民币A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.4345,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.4354,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.4345
+        1.4354
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:57+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:01+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -287,16 +287,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:00+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.4345,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.4354,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:00+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -307,15 +307,15 @@
     {
       "code": "006594",
       "name": "博道中证500增强C",
-      "nav_date": "2026-10-16",
-      "unit_nav": 2.2418,
+      "nav_date": "2026-10-19",
+      "unit_nav": 2.247,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2418
+        2.247
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:53+08:00",
+      "checked_at": "2026-10-20T01:08:12+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -324,16 +324,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:52+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 2.2418,
+          "nav_date": "2026-10-19",
+          "unit_nav": 2.247,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:52+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -344,16 +344,16 @@
     {
       "code": "007721",
       "name": "天弘标普500发起(QDII-FOF)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.2587,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.2375,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2587
+        2.2375
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:54+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:13+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -361,16 +361,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.2587,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.2375,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -381,16 +381,16 @@
     {
       "code": "007722",
       "name": "天弘标普500发起(QDII-FOF)C",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.2162,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.1954,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2162
+        2.1954
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:59+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:20+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -398,16 +398,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:58+08:00",
+          "checked_at": "2026-10-20T01:08:19+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.2162,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.1954,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:58+08:00",
+          "checked_at": "2026-10-20T01:08:19+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -418,15 +418,15 @@
     {
       "code": "007751",
       "name": "景顺长城沪港深红利成长低波指数A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.2272,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.2343,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.2272
+        1.2343
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:02+08:00",
+      "checked_at": "2026-10-20T01:08:23+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -435,16 +435,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.2272,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.2343,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -455,15 +455,15 @@
     {
       "code": "008163",
       "name": "南方标普红利低波50ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.0749,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.0839,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.0749
+        1.0839
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:45+08:00",
+      "checked_at": "2026-10-20T01:08:01+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -472,16 +472,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:00+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.0749,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.0839,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:00+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -492,15 +492,15 @@
     {
       "code": "008928",
       "name": "宏利消费红利指数A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.3714,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.3761,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.3714
+        1.3761
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:44+08:00",
+      "checked_at": "2026-10-20T01:08:05+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -509,16 +509,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.3714,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.3761,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -529,15 +529,15 @@
     {
       "code": "010771",
       "name": "天弘国证消费100指数增强发起A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.9092,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.906,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.9092
+        0.906
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:55+08:00",
+      "checked_at": "2026-10-20T01:08:11+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -546,16 +546,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:05+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.9092,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.906,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:05+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -566,15 +566,15 @@
     {
       "code": "013127",
       "name": "汇添富恒生科技ETF联接发起式(QDII)A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.6464,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.6462,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.6464
+        0.6462
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:47+08:00",
+      "checked_at": "2026-10-20T01:08:10+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -583,16 +583,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:03+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.6464,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.6462,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:03+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -603,15 +603,15 @@
     {
       "code": "013308",
       "name": "易方达恒生科技ETF联接(QDII)A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.9756,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.9753,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.9756
+        0.9753
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:52+08:00",
+      "checked_at": "2026-10-20T01:08:02+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -620,16 +620,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:01+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.9756,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.9753,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -640,16 +640,16 @@
     {
       "code": "016452",
       "name": "南方纳斯达克100指数发起(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.3039,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.2476,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.3039
+        2.2476
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:52+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:11+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -657,16 +657,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:51+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.3039,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.2476,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:51+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -677,16 +677,16 @@
     {
       "code": "016532",
       "name": "嘉实纳斯达克100ETF发起联接(QDII)A人民币",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.1909,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.138,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.1909
+        2.138
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:58+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:18+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -694,16 +694,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.1909,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.138,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -714,16 +714,16 @@
     {
       "code": "017091",
       "name": "景顺长城纳斯达克科技ETF联接(QDII)A人民币",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.8666,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.7894,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.8666
+        2.7894
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:58+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:17+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -731,16 +731,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:16+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.8666,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.7894,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:16+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -751,15 +751,15 @@
     {
       "code": "017423",
       "name": "天弘中证同业存单AAA指数7天持有",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.0722,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.0723,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.0722
+        1.0723
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:02+08:00",
+      "checked_at": "2026-10-20T01:08:26+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -768,16 +768,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:22+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.0722,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.0723,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:22+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -788,16 +788,16 @@
     {
       "code": "017436",
       "name": "华宝纳斯达克精选股票发起式(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.3242,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.2403,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.3242
+        2.2403
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:50+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:03+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -805,16 +805,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:46+08:00",
+          "checked_at": "2026-10-20T01:08:02+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.3242,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.2403,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:46+08:00",
+          "checked_at": "2026-10-20T01:08:02+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -825,16 +825,16 @@
     {
       "code": "017437",
       "name": "华宝纳斯达克精选股票发起式(QDII)C",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.2926,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.2099,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2926
+        2.2099
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:54+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:12+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -842,16 +842,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.2926,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.2099,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:11+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -862,16 +862,16 @@
     {
       "code": "017641",
       "name": "摩根标普500指数(QDII)人民币A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.7088,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.6897,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.7088
+        1.6897
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:54+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:13+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -879,16 +879,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.7088,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.6897,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -899,15 +899,15 @@
     {
       "code": "017644",
       "name": "博道中证1000指数增强A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.5676,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.5701,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.5676
+        1.5701
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:46+08:00",
+      "checked_at": "2026-10-20T01:08:02+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -916,16 +916,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:01+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.5676,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.5701,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:44+08:00",
+          "checked_at": "2026-10-20T01:08:01+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -936,15 +936,15 @@
     {
       "code": "017937",
       "name": "易方达中证医疗ETF联接发起式A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.7266,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.7348,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.7266
+        0.7348
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:47+08:00",
+      "checked_at": "2026-10-20T01:08:05+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -953,16 +953,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:45+08:00",
+          "checked_at": "2026-10-20T01:08:02+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.7266,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.7348,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:45+08:00",
+          "checked_at": "2026-10-20T01:08:02+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -973,16 +973,16 @@
     {
       "code": "018043",
       "name": "天弘纳斯达克100指数发起(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.0474,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.9979,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.0474
+        1.9979
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:01+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:18+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -990,16 +990,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.0474,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.9979,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1010,16 +1010,16 @@
     {
       "code": "018044",
       "name": "天弘纳斯达克100指数发起(QDII)C",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.0297,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.9805,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.0297
+        1.9805
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:02+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:23+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1027,16 +1027,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.0297,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.9805,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1047,15 +1047,15 @@
     {
       "code": "018099",
       "name": "方正富邦中证保险C",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.01,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.018,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.01
+        1.018
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:01+08:00",
+      "checked_at": "2026-10-20T01:08:21+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1064,16 +1064,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.01,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.018,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1084,16 +1084,16 @@
     {
       "code": "019118",
       "name": "景顺长城纳斯达克科技ETF联接(QDII)E人民币",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.846,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.7693,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.846
+        2.7693
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:57+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:17+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1101,16 +1101,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:16+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.846,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.7693,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:16+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1121,16 +1121,16 @@
     {
       "code": "019172",
       "name": "摩根纳斯达克100指数(QDII)人民币A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.7634,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.7211,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.7634
+        1.7211
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:55+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:13+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1138,16 +1138,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.7634,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.7211,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1158,15 +1158,15 @@
     {
       "code": "019260",
       "name": "富国恒生红利ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.2345,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.2342,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.2345
+        1.2342
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:01+08:00",
+      "checked_at": "2026-10-20T01:08:22+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1175,16 +1175,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:20+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.2345,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.2342,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:00+08:00",
+          "checked_at": "2026-10-20T01:08:20+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1195,16 +1195,16 @@
     {
       "code": "019441",
       "name": "万家纳斯达克100指数发起式(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.6994,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.6585,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.6994
+        1.6585
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:55+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:14+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1212,16 +1212,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.6994,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.6585,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1232,16 +1232,16 @@
     {
       "code": "019442",
       "name": "万家纳斯达克100指数发起式(QDII)C",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.688,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.6474,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.688
+        1.6474
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:56+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:14+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1249,16 +1249,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.688,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.6474,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1269,16 +1269,16 @@
     {
       "code": "019524",
       "name": "华泰柏瑞纳斯达克100ETF发起式联接(QDII)A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.6587,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.6185,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.6587
+        1.6185
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:56+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:17+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1286,16 +1286,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.6587,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.6185,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1306,16 +1306,16 @@
     {
       "code": "019736",
       "name": "宝盈纳斯达克100指数发起(QDII)A人民币",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.4996,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.4635,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.4996
+        1.4635
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:56+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:16+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1323,16 +1323,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.4996,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.4635,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1343,16 +1343,16 @@
     {
       "code": "019737",
       "name": "宝盈纳斯达克100指数发起(QDII)C人民币",
-      "nav_date": "2026-10-15",
-      "unit_nav": 1.4887,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.4529,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.4887
+        1.4529
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:56+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:16+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1360,16 +1360,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 1.4887,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.4529,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:14+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1380,15 +1380,15 @@
     {
       "code": "021457",
       "name": "易方达港股通红利低波ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.166,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.1658,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.166
+        1.1658
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:51+08:00",
+      "checked_at": "2026-10-20T01:08:10+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1397,16 +1397,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:50+08:00",
+          "checked_at": "2026-10-20T01:08:09+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.166,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.1658,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:50+08:00",
+          "checked_at": "2026-10-20T01:08:09+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1417,15 +1417,15 @@
     {
       "code": "021550",
       "name": "博时中证红利低波动100ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.103,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.1129,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.103
+        1.1129
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:53+08:00",
+      "checked_at": "2026-10-20T01:08:14+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1434,16 +1434,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:51+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.103,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.1129,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:51+08:00",
+          "checked_at": "2026-10-20T01:08:10+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1454,15 +1454,15 @@
     {
       "code": "022459",
       "name": "易方达中证A500ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.1317,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.1333,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.1317
+        1.1333
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:01+08:00",
+      "checked_at": "2026-10-20T01:08:22+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1471,16 +1471,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.1317,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.1333,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:58:01+08:00",
+          "checked_at": "2026-10-20T01:08:21+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1491,16 +1491,16 @@
     {
       "code": "022523",
       "name": "天弘标普500发起(QDII-FOF)D",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.2155,
+      "nav_date": "2026-10-16",
+      "unit_nav": 2.1947,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.2155
+        2.1947
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:00+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:19+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1508,16 +1508,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:58+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.2155,
+          "nav_date": "2026-10-16",
+          "unit_nav": 2.1947,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:58+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1528,16 +1528,16 @@
     {
       "code": "022525",
       "name": "天弘纳斯达克100指数发起(QDII)D",
-      "nav_date": "2026-10-15",
-      "unit_nav": 2.0253,
+      "nav_date": "2026-10-16",
+      "unit_nav": 1.9763,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.0253
+        1.9763
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:00+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:19+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1545,16 +1545,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 2.0253,
+          "nav_date": "2026-10-16",
+          "unit_nav": 1.9763,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:57+08:00",
+          "checked_at": "2026-10-20T01:08:18+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1565,15 +1565,15 @@
     {
       "code": "024772",
       "name": "摩根标普港股通低波红利ETF发起式联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.0141,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.0139,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.0141
+        1.0139
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:54+08:00",
+      "checked_at": "2026-10-20T01:08:12+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1582,16 +1582,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.0141,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.0139,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:53+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1602,15 +1602,15 @@
     {
       "code": "025958",
       "name": "南方中证全指自由现金流ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.9298,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.9362,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.9298
+        0.9362
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:48+08:00",
+      "checked_at": "2026-10-20T01:08:06+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1619,16 +1619,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:05+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.9298,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.9362,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:47+08:00",
+          "checked_at": "2026-10-20T01:08:05+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1639,16 +1639,16 @@
     {
       "code": "050025",
       "name": "博时标普500ETF联接A",
-      "nav_date": "2026-10-15",
-      "unit_nav": 5.6062,
+      "nav_date": "2026-10-16",
+      "unit_nav": 5.5437,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        5.6062
+        5.5437
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:57+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:18+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1656,16 +1656,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 5.6062,
+          "nav_date": "2026-10-16",
+          "unit_nav": 5.5437,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:56+08:00",
+          "checked_at": "2026-10-20T01:08:17+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1676,16 +1676,16 @@
     {
       "code": "160213",
       "name": "国泰纳斯达克100指数",
-      "nav_date": "2026-10-15",
-      "unit_nav": 4.501,
+      "nav_date": "2026-10-16",
+      "unit_nav": 4.387,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        4.501
+        4.387
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:06+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:32+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1693,16 +1693,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 4.501,
+          "nav_date": "2026-10-16",
+          "unit_nav": 4.387,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:55+08:00",
+          "checked_at": "2026-10-20T01:08:13+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1713,16 +1713,16 @@
     {
       "code": "161130",
       "name": "易方达纳斯达克100ETF联接(QDII-LOF)A(人民币)",
-      "nav_date": "2026-10-15",
-      "unit_nav": 4.4785,
+      "nav_date": "2026-10-16",
+      "unit_nav": 4.3704,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        4.4785
+        4.3704
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:58:00+08:00",
-      "days_since_nav": 2,
+      "checked_at": "2026-10-20T01:08:21+08:00",
+      "days_since_nav": 4,
       "stale_warning": false,
       "freshness_status": "recent",
       "retry_count": 0,
@@ -1730,16 +1730,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:59+08:00",
+          "checked_at": "2026-10-20T01:08:19+08:00",
           "status": "ok",
-          "nav_date": "2026-10-15",
-          "unit_nav": 4.4785,
+          "nav_date": "2026-10-16",
+          "unit_nav": 4.3704,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:59+08:00",
+          "checked_at": "2026-10-20T01:08:19+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1750,15 +1750,15 @@
     {
       "code": "162412",
       "name": "华宝医疗ETF联接A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 0.5636,
+      "nav_date": "2026-10-19",
+      "unit_nav": 0.5702,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        0.5636
+        0.5702
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:47+08:00",
+      "checked_at": "2026-10-20T01:08:00+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1767,16 +1767,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 0.5636,
+          "nav_date": "2026-10-19",
+          "unit_nav": 0.5702,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1787,15 +1787,15 @@
     {
       "code": "167301",
       "name": "方正富邦中证保险A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 1.024,
+      "nav_date": "2026-10-19",
+      "unit_nav": 1.031,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        1.024
+        1.031
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:44+08:00",
+      "checked_at": "2026-10-20T01:08:09+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1804,16 +1804,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 1.024,
+          "nav_date": "2026-10-19",
+          "unit_nav": 1.031,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:42+08:00",
+          "checked_at": "2026-10-20T01:07:58+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1824,15 +1824,15 @@
     {
       "code": "501060",
       "name": "中金中证优选300指数(LOF)A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 2.3496,
+      "nav_date": "2026-10-19",
+      "unit_nav": 2.3672,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        2.3496
+        2.3672
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:50+08:00",
+      "checked_at": "2026-10-20T01:08:20+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1841,16 +1841,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:48+08:00",
+          "checked_at": "2026-10-20T01:08:06+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 2.3496,
+          "nav_date": "2026-10-19",
+          "unit_nav": 2.3672,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:48+08:00",
+          "checked_at": "2026-10-20T01:08:06+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
@@ -1861,15 +1861,15 @@
     {
       "code": "519002",
       "name": "华安安信消费混合A",
-      "nav_date": "2026-10-16",
-      "unit_nav": 4.565,
+      "nav_date": "2026-10-19",
+      "unit_nav": 4.576,
       "source": "eastmoney:pingzhongdata",
       "source_conflict": false,
       "same_day_source_values": [
-        4.565
+        4.576
       ],
       "error": null,
-      "checked_at": "2026-10-17T02:57:55+08:00",
+      "checked_at": "2026-10-20T01:08:28+08:00",
       "days_since_nav": 1,
       "stale_warning": false,
       "freshness_status": "recent",
@@ -1878,16 +1878,16 @@
         {
           "source": "eastmoney:pingzhongdata",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "ok",
-          "nav_date": "2026-10-16",
-          "unit_nav": 4.565,
+          "nav_date": "2026-10-19",
+          "unit_nav": 4.576,
           "error": null
         },
         {
           "source": "eastmoney:fundgz-dwjz",
           "attempt": 1,
-          "checked_at": "2026-10-17T02:57:54+08:00",
+          "checked_at": "2026-10-20T01:08:12+08:00",
           "status": "no_data",
           "nav_date": null,
           "unit_nav": null,
