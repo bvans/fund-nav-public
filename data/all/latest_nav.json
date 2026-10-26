@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T04:46:47+08:00",
+  "generated_at": "2026-10-27T06:50:45+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23584,
   "newest_bulk_nav_date": "2026-10-26",
@@ -39680,10 +39680,10 @@
       "code": "007212",
       "name": "山证资管裕泰3个月定开债券发起式",
       "type": "债券型-信用债",
-      "nav_date": "2026-10-26",
-      "unit_nav": 1.0368,
-      "accum_nav": 1.3332,
-      "source": "eastmoney:bulk-daily"
+      "nav_date": "2026-10-23",
+      "unit_nav": 1.0365,
+      "accum_nav": 1.3329,
+      "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "007213",
@@ -55988,10 +55988,10 @@
       "code": "009567",
       "name": "山证资管裕丰一年定开债券发起式",
       "type": "债券型-长债",
-      "nav_date": "2026-10-26",
-      "unit_nav": 1.0588,
-      "accum_nav": 1.2422,
-      "source": "eastmoney:bulk-daily"
+      "nav_date": "2026-10-23",
+      "unit_nav": 1.0581,
+      "accum_nav": 1.2415,
+      "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "009568",
@@ -119014,7 +119014,7 @@
     {
       "code": "018450",
       "name": "富安达富祥利率债A",
-      "type": "债券型-长债",
+      "type": "债券型-利率债",
       "nav_date": "2026-10-26",
       "unit_nav": 1.023,
       "accum_nav": 1.095,
@@ -119023,7 +119023,7 @@
     {
       "code": "018451",
       "name": "富安达富祥利率债C",
-      "type": "债券型-长债",
+      "type": "债券型-利率债",
       "nav_date": "2026-10-26",
       "unit_nav": 1.0249,
       "accum_nav": 1.0969,
@@ -121202,19 +121202,19 @@
       "code": "018758",
       "name": "山证资管汇利一年定开债券A",
       "type": "债券型-长债",
-      "nav_date": "2026-10-26",
-      "unit_nav": 1.0109,
-      "accum_nav": 1.0484,
-      "source": "eastmoney:bulk-daily"
+      "nav_date": "2026-10-23",
+      "unit_nav": 1.0108,
+      "accum_nav": 1.0483,
+      "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "018759",
       "name": "山证资管汇利一年定开债券C",
       "type": "债券型-长债",
-      "nav_date": "2026-10-26",
-      "unit_nav": 1.008,
-      "accum_nav": 1.0365,
-      "source": "eastmoney:bulk-daily"
+      "nav_date": "2026-10-23",
+      "unit_nav": 1.0079,
+      "accum_nav": 1.0364,
+      "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "018761",
@@ -159001,7 +159001,7 @@
     {
       "code": "023557",
       "name": "富安达富祥利率债D",
-      "type": "债券型-长债",
+      "type": "债券型-利率债",
       "nav_date": "2026-10-26",
       "unit_nav": 1.023,
       "accum_nav": 1.023,
@@ -188620,7 +188620,7 @@
     {
       "code": "027391",
       "name": "前海开源裕稳3个月持有混合(FOF)A",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-10-23",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -188629,7 +188629,7 @@
     {
       "code": "027392",
       "name": "前海开源裕稳3个月持有混合(FOF)C",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-10-23",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
