@@ -1,7 +1,14 @@
 import unittest
+from datetime import datetime, timedelta, timezone
 
-from fetch_index_quotes import (\n    _market_phase,\n    _num,\n    _rolling_high,\n    _tencent_symbol,\n    parse_kline_line,\n    parse_tencent_kline_row,\n)
-from datetime import datetime, timezone, timedelta
+from fetch_index_quotes import (
+    _market_phase,
+    _num,
+    _rolling_high,
+    _tencent_symbol,
+    parse_kline_line,
+    parse_tencent_kline_row,
+)
 
 
 class IndexQuoteHelpersTest(unittest.TestCase):
