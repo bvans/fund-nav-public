@@ -95,11 +95,16 @@ def _load_indices() -> list[dict[str, str]]:
     return out
 
 
-def _get_json(hosts: tuple[str, ...], path: str, params: dict[str, Any]) -> tuple[dict[str, Any], str]:
+def _get_json(
+    hosts: tuple[str, ...],
+    path: str,
+    params: dict[str, Any],
+    attempts: int = 3,
+) -> tuple[dict[str, Any], str]:
     last_error: Exception | None = None
     trust_env = os.getenv("EASTMONEY_TRUST_ENV", "0") == "1"
     with httpx.Client(headers=HEADERS, timeout=15.0, follow_redirects=True, trust_env=trust_env) as client:
-        for attempt in range(3):
+        for attempt in range(attempts):
             for host in hosts:
                 url = f"https://{host}{path}"
                 try:
@@ -113,7 +118,7 @@ def _get_json(hosts: tuple[str, ...], path: str, params: dict[str, Any]) -> tupl
                     return payload, host
                 except Exception as exc:  # noqa: BLE001 - preserve source failures
                     last_error = exc
-            if attempt < 2:
+            if attempt < attempts - 1:
                 time.sleep(1.5 * (attempt + 1))
     raise RuntimeError(f"all Eastmoney hosts failed: {last_error}")
 
@@ -216,6 +221,7 @@ def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str
             "fields2": "f51,f52,f53,f54,f55,f56,f57,f58,f59,f60,f61",
             "ut": EM_UT,
         },
+        attempts=1,
     )
     lines = (payload.get("data") or {}).get("klines") or []
     if not isinstance(lines, list) or not lines:
