@@ -21,8 +21,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: fund-data-write
-  cancel-in-progress: false
+  group: index-data-write
+  cancel-in-progress: true
 
 jobs:
   fetch-index-quotes:
