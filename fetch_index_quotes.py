@@ -5,13 +5,13 @@ Primary use case: GitHub Actions creates a small, auditable market-data cache
 that can be read directly by monitoring/analysis tools without scraping pages.
 
 Data sources:
-- Realtime snapshot: /api/qt/ulist.np/get
-- Daily K-line:      /api/qt/stock/kline/get
+- Realtime snapshot (authoritative quote): Eastmoney /api/qt/ulist.np/get
+- Daily K-line for drawdown context: Eastmoney push2his, with Tencent index
+  K-line fallback when push2his is unavailable from GitHub-hosted runners.
 
-The endpoint/field mapping is the same family used by open-source projects such
-as AKShare and other Eastmoney providers.  We deliberately fail closed: if the
-source returns missing/invalid data, the script exits non-zero instead of
-writing zeroes or fabricating a quote.
+The endpoint/field mapping follows the same public interfaces used by open-source
+projects such as AKShare. Realtime quotes fail closed: missing/invalid Eastmoney
+data never gets replaced by a different realtime source or fabricated values.
 """
 
 from __future__ import annotations
@@ -207,7 +207,7 @@ def parse_kline_line(line: str) -> dict[str, Any]:
     }
 
 
-def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str, Any]], str]:
+def fetch_history_eastmoney(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str, Any]], str]:
     payload, host = _get_json(
         PUSH2HIS_HOSTS,
         "/api/qt/stock/kline/get",
@@ -225,24 +225,109 @@ def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str
     )
     lines = (payload.get("data") or {}).get("klines") or []
     if not isinstance(lines, list) or not lines:
-        raise RuntimeError(f"empty kline history for {meta['code']}")
+        raise RuntimeError(f"empty Eastmoney kline history for {meta['code']}")
     bars = [parse_kline_line(str(x)) for x in lines]
     if not any(b.get("close") for b in bars):
-        raise RuntimeError(f"invalid kline history for {meta['code']}")
+        raise RuntimeError(f"invalid Eastmoney kline history for {meta['code']}")
     return bars, host
 
 
-def _rolling_high(bars: list[dict[str, Any]], realtime_high: float | None, days: int = 120) -> tuple[float | None, str | None]:
+def _tencent_symbol(code: str) -> str:
+    # Official mainland indices in this config follow the conventional Tencent
+    # symbols also used by AKShare: sh000852 / sh000510 / sz399006, etc.
+    return ("sz" if code.startswith("399") else "sh") + code
+
+
+def parse_tencent_kline_row(row: Any) -> dict[str, Any]:
+    if not isinstance(row, (list, tuple)) or len(row) < 5:
+        raise ValueError(f"bad Tencent kline row: {row!r}")
+    close = _num(row[2])
+    if close is None or close <= 0:
+        raise ValueError(f"bad Tencent kline close: {row!r}")
+    # Tencent index rows vary by endpoint/version. OHLC positions are stable.
+    # Index 5 is volume in commonly returned rows; index 8, when present, is
+    # turnover amount in ten-thousand yuan. Neither is needed for drawdown.
+    amount = _num(row[8]) if len(row) > 8 else None
+    return {
+        "date": str(row[0])[:10],
+        "open": _num(row[1]),
+        "close": close,
+        "high": _num(row[3]),
+        "low": _num(row[4]),
+        "volume": _num(row[5]) if len(row) > 5 else None,
+        "amount": amount * 10000 if amount is not None else None,
+        "amplitude_pct": None,
+        "pct_change": None,
+        "change": None,
+        "turnover_pct": None,
+    }
+
+
+def fetch_history_tencent(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str, Any]], str]:
+    symbol = _tencent_symbol(meta["code"])
+    hosts = (
+        "proxy.finance.qq.com",
+        "web.ifzq.gtimg.cn",
+    )
+    last_error: Exception | None = None
+    headers = {
+        "User-Agent": HEADERS["User-Agent"],
+        "Referer": "https://gu.qq.com/",
+        "Accept": "application/json,text/plain,*/*",
+    }
+    with httpx.Client(headers=headers, timeout=10.0, follow_redirects=True, trust_env=False) as client:
+        for host in hosts:
+            url = f"https://{host}/ifzqgtimg/appstock/app/newfqkline/get"
+            try:
+                r = client.get(url, params={"param": f"{symbol},day,,,{max(limit, 1)},"})
+                r.raise_for_status()
+                payload = r.json()
+                node = ((payload.get("data") or {}).get(symbol) or {})
+                rows = node.get("day") or node.get("qfqday") or []
+                bars = []
+                for row in rows:
+                    try:
+                        bars.append(parse_tencent_kline_row(row))
+                    except ValueError:
+                        continue
+                if not bars:
+                    raise RuntimeError(f"empty Tencent kline history for {meta['code']}")
+                return bars[-limit:], host
+            except Exception as exc:  # noqa: BLE001
+                last_error = exc
+    raise RuntimeError(f"all Tencent history hosts failed: {last_error}")
+
+
+def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str, Any]], str, str, str | None]:
+    em_error: str | None = None
+    try:
+        bars, host = fetch_history_eastmoney(meta, limit=limit)
+        return bars, "eastmoney:push2his", host, None
+    except Exception as exc:  # GitHub-hosted runners often get push2his 502.
+        em_error = str(exc)[:500]
+
+    bars, host = fetch_history_tencent(meta, limit=limit)
+    return bars, "tencent:newfqkline", host, em_error
+
+
+def _rolling_high(
+    bars: list[dict[str, Any]],
+    realtime_high: float | None,
+    days: int = 120,
+) -> tuple[float | None, str | None]:
     sample = bars[-days:]
     candidates: list[tuple[float, str]] = []
     for b in sample:
         h = _num(b.get("high"))
         if h is not None:
             candidates.append((h, str(b.get("date") or "")))
-    if realtime_high is not None:
-        candidates.append((realtime_high, datetime.now(CST).date().isoformat()))
+
+    # Never claim today's high is a "120-day high" when history is unavailable.
     if not candidates:
         return None, None
+
+    if realtime_high is not None:
+        candidates.append((realtime_high, datetime.now(CST).date().isoformat()))
     return max(candidates, key=lambda x: x[0])
 
 
@@ -274,10 +359,15 @@ def main() -> int:
 
         bars: list[dict[str, Any]] = []
         hist_host: str | None = None
+        hist_source: str | None = None
         history_status = "fresh"
+        history_note: str | None = None
         try:
-            bars, hist_host = fetch_history(meta)
+            bars, hist_source, hist_host, em_error = fetch_history(meta)
             history_hosts[quote["code"]] = hist_host
+            if em_error:
+                history_note = "Eastmoney history unavailable; Tencent fallback used"
+                history_errors[quote["code"]] = em_error
             _atomic_write_json(
                 HISTORY_DIR / f"{quote['code']}.json",
                 {
@@ -285,13 +375,13 @@ def main() -> int:
                     "name": quote["name"],
                     "secid": quote["secid"],
                     "history_secid": meta["history_secid"],
-                    "source": "eastmoney:push2his",
+                    "source": hist_source,
                     "source_host": hist_host,
                     "checked_at": checked_at,
                     "bars": bars,
                 },
             )
-        except Exception as exc:  # history is an enhancement; realtime remains authoritative
+        except Exception as exc:  # history is context only; realtime remains Eastmoney-authoritative
             history_errors[quote["code"]] = str(exc)[:500]
             cached_path = HISTORY_DIR / f"{quote['code']}.json"
             if cached_path.exists():
@@ -299,7 +389,9 @@ def main() -> int:
                     cached = json.loads(cached_path.read_text(encoding="utf-8"))
                     bars = cached.get("bars") or []
                     history_status = "cached"
-                    history_hosts[quote["code"]] = str(cached.get("source_host") or "cached")
+                    hist_source = str(cached.get("source") or "cached")
+                    hist_host = str(cached.get("source_host") or "cached")
+                    history_hosts[quote["code"]] = hist_host
                 except Exception:
                     history_status = "unavailable"
             else:
@@ -314,6 +406,9 @@ def main() -> int:
         item = {
             **quote,
             "history_status": history_status,
+            "history_source": hist_source,
+            "history_host": hist_host,
+            "history_note": history_note,
             "high_120d": _round(high_120d),
             "high_120d_date": high_date,
             "drawdown_from_120d_high_pct": _round(drawdown, 3),
