@@ -112,6 +112,60 @@ data/manual_latest_nav.csv
 
 不会覆盖重点基金日常数据。按需查询也会执行延迟重试、记录两个来源的返回日期/数值/采集时间和独立的审计日志。
 
+
+## 4. A股主要指数行情
+
+工作流：`.github/workflows/fetch-index-quotes.yml`
+
+北京时间工作日自动采集：
+
+- 11:30：午间快照
+- 14:45：尾盘快照
+- 15:10：收盘后快照
+
+指数列表由 `indices.json` 管理，当前包括中证A500、中证1000、沪深300、中证500、上证指数、深证成指、创业板指和科创50。
+
+数据源直接使用东方财富 `push2` 行情接口，不抓取动态网页：
+
+- 实时/盘中快照：`/api/qt/ulist.np/get`
+- 最近约130个交易日日线：`/api/qt/stock/kline/get`
+
+中证1000使用东方财富 `secid=1.000852`，中证A500使用 `secid=1.000510`。
+
+输出：
+
+```text
+data/indices/
+├── latest.json
+├── history/
+│   ├── 000510.json
+│   ├── 000852.json
+│   └── ...
+└── snapshots/
+    └── YYYY-MM-DD.jsonl
+```
+
+`latest.json` 除最新价、涨跌幅、开高低、昨收外，还根据最近120个交易日计算：
+
+- `high_120d`
+- `high_120d_date`
+- `drawdown_from_120d_high_pct`
+
+程序对 `push2delay.eastmoney.com` / `push2.eastmoney.com` 和 `push2his.eastmoney.com` 做主机降级；接口返回空值或缺失指数时直接失败，不把缺失值写成 0，也不编造行情。
+
+Raw JSON：
+
+```text
+https://raw.githubusercontent.com/bvans/fund-nav-public/main/data/indices/latest.json
+```
+
+本地运行：
+
+```bash
+python -m pip install -r requirements.txt
+python fetch_index_quotes.py
+```
+
 ## 示例
 
 ```json
