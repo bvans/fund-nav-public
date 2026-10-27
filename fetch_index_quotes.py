@@ -152,6 +152,12 @@ def fetch_realtime(indices: list[dict[str, str]]) -> tuple[list[dict[str, Any]],
         prev_close = _num(r.get("f18"))
         if price is None or price <= 0:
             raise RuntimeError(f"invalid realtime price for {meta['code']}: {r.get('f2')!r}")
+        source_epoch = int(r["f124"]) if str(r.get("f124", "")).isdigit() else None
+        source_time = (
+            datetime.fromtimestamp(source_epoch, CST).isoformat(timespec="seconds")
+            if source_epoch
+            else None
+        )
         out.append(
             {
                 **meta,
@@ -165,7 +171,9 @@ def fetch_realtime(indices: list[dict[str, str]]) -> tuple[list[dict[str, Any]],
                 "prev_close": _round(prev_close),
                 "volume": _num(r.get("f5")),
                 "amount": _num(r.get("f6")),
-                "source_epoch": int(r["f124"]) if str(r.get("f124", "")).isdigit() else None,
+                "source_epoch": source_epoch,
+                "source_time": source_time,
+                "source_date": source_time[:10] if source_time else None,
             }
         )
 
