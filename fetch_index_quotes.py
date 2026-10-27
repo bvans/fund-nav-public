@@ -38,6 +38,8 @@ CST = timezone(timedelta(hours=8))
 EM_UT = "7eea3edcaed734bea9cbfc24409ed989"
 PUSH2_HOSTS = ("push2delay.eastmoney.com", "push2.eastmoney.com")
 PUSH2HIS_HOSTS = ("push2his.eastmoney.com", "push2delay.eastmoney.com")
+_EM_HISTORY_DISABLED = False
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/130.0 Safari/537.36",
@@ -299,12 +301,21 @@ def fetch_history_tencent(meta: dict[str, str], limit: int = 130) -> tuple[list[
 
 
 def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str, Any]], str, str, str | None]:
+    global _EM_HISTORY_DISABLED
     em_error: str | None = None
-    try:
-        bars, host = fetch_history_eastmoney(meta, limit=limit)
-        return bars, "eastmoney:push2his", host, None
-    except Exception as exc:  # GitHub-hosted runners often get push2his 502.
-        em_error = str(exc)[:500]
+
+    # Circuit breaker: GitHub-hosted runners may be rejected by push2his.
+    # Probe it once per job; after the first failure use Tencent for the rest
+    # instead of multiplying timeouts across every tracked index.
+    if not _EM_HISTORY_DISABLED:
+        try:
+            bars, host = fetch_history_eastmoney(meta, limit=limit)
+            return bars, "eastmoney:push2his", host, None
+        except Exception as exc:  # noqa: BLE001
+            em_error = str(exc)[:500]
+            _EM_HISTORY_DISABLED = True
+    else:
+        em_error = "Eastmoney push2his disabled after an earlier failure in this run"
 
     bars, host = fetch_history_tencent(meta, limit=limit)
     return bars, "tencent:newfqkline", host, em_error
