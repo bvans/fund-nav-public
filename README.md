@@ -128,7 +128,7 @@ data/manual_latest_nav.csv
 数据源直接使用东方财富 `push2` 行情接口，不抓取动态网页：
 
 - 实时/盘中快照：`/api/qt/ulist.np/get`
-- 最近约130个交易日日线：`/api/qt/stock/kline/get`
+- 最近约130个交易日日线：优先东方财富 `push2his /api/qt/stock/kline/get`；GitHub runner 无法访问时，使用腾讯 `newfqkline` 仅作为历史回撤计算的辅助源
 
 中证1000使用东方财富 `secid=1.000852`，中证A500使用 `secid=1.000510`。
 
@@ -151,7 +151,7 @@ data/indices/
 - `high_120d_date`
 - `drawdown_from_120d_high_pct`
 
-实时行情对 `push2delay.eastmoney.com` / `push2.eastmoney.com` 做主机降级；实时接口返回空值、缺失指数或无有效价格时直接失败，不把缺失值写成 0，也不编造行情。`source_time` / `source_date` 保存东方财富 `f124` 更新时间戳，可用于识别节假日或陈旧报价。历史 K 线属于增强信息：`push2his` 可用时更新本地历史，不可用时保留已有缓存并在 `history_status` / `history_errors` 中明确标记，不阻断实时行情。
+实时行情对 `push2delay.eastmoney.com` / `push2.eastmoney.com` 做主机降级；实时接口返回空值、缺失指数或无有效价格时直接失败，不把缺失值写成 0，也不编造行情。`source_time` / `source_date` 保存东方财富 `f124` 更新时间戳，可用于识别节假日或陈旧报价。**最新点位、涨跌幅、开高低和昨收始终只认东方财富实时源。** 历史 K 线只是用于计算120日高点/回撤：优先东财 `push2his`，其在 GitHub runner 不可用时降级到腾讯指数日线，并在 `history_source` / `history_note` 中明确标记；若历史也拿不到，则 `high_120d` 和回撤留空，不会把“今日最高价”冒充120日高点。
 
 Raw JSON：
 
