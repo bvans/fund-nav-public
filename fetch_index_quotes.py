@@ -85,12 +85,13 @@ def _load_indices() -> list[dict[str, str]]:
         code = str(item.get("code", "")).strip()
         name = str(item.get("name", "")).strip()
         secid = str(item.get("secid", "")).strip()
-        if not (code and name and secid and "." in secid):
+        history_secid = str(item.get("history_secid") or secid).strip()
+        if not (code and name and secid and "." in secid and "." in history_secid):
             raise RuntimeError(f"invalid index config: {item!r}")
         if code in seen:
             raise RuntimeError(f"duplicate index code: {code}")
         seen.add(code)
-        out.append({"code": code, "name": name, "secid": secid})
+        out.append({"code": code, "name": name, "secid": secid, "history_secid": history_secid})
     return out
 
 
@@ -206,7 +207,7 @@ def fetch_history(meta: dict[str, str], limit: int = 130) -> tuple[list[dict[str
         PUSH2HIS_HOSTS,
         "/api/qt/stock/kline/get",
         {
-            "secid": meta["secid"],
+            "secid": meta.get("history_secid") or meta["secid"],
             "klt": "101",
             "fqt": "0",
             "lmt": str(limit),
@@ -256,7 +257,13 @@ def main() -> int:
     history_hosts: dict[str, str] = {}
 
     for quote in realtime:
-        meta = {"code": quote["code"], "name": quote["name"], "secid": quote["secid"]}
+        config_meta = next(x for x in indices if x["code"] == quote["code"])
+        meta = {
+            "code": quote["code"],
+            "name": quote["name"],
+            "secid": quote["secid"],
+            "history_secid": config_meta["history_secid"],
+        }
         bars, hist_host = fetch_history(meta)
         history_hosts[quote["code"]] = hist_host
         high_120d, high_date = _rolling_high(bars, _num(quote.get("high")), 120)
@@ -279,6 +286,7 @@ def main() -> int:
                 "code": quote["code"],
                 "name": quote["name"],
                 "secid": quote["secid"],
+                "history_secid": meta["history_secid"],
                 "source": "eastmoney:push2his",
                 "source_host": hist_host,
                 "checked_at": checked_at,
