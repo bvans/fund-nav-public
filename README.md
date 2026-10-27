@@ -151,7 +151,7 @@ data/indices/
 - `high_120d_date`
 - `drawdown_from_120d_high_pct`
 
-程序对 `push2delay.eastmoney.com` / `push2.eastmoney.com` 和 `push2his.eastmoney.com` 做主机降级；接口返回空值或缺失指数时直接失败，不把缺失值写成 0，也不编造行情。
+实时行情对 `push2delay.eastmoney.com` / `push2.eastmoney.com` 做主机降级；实时接口返回空值、缺失指数或无有效价格时直接失败，不把缺失值写成 0，也不编造行情。`source_time` / `source_date` 保存东方财富 `f124` 更新时间戳，可用于识别节假日或陈旧报价。历史 K 线属于增强信息：`push2his` 可用时更新本地历史，不可用时保留已有缓存并在 `history_status` / `history_errors` 中明确标记，不阻断实时行情。
 
 Raw JSON：
 
