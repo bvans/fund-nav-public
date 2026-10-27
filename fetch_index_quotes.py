@@ -255,6 +255,7 @@ def main() -> int:
     realtime, realtime_host = fetch_realtime(indices)
     latest_items: list[dict[str, Any]] = []
     history_hosts: dict[str, str] = {}
+    history_errors: dict[str, str] = {}
 
     for quote in realtime:
         config_meta = next(x for x in indices if x["code"] == quote["code"])
@@ -264,8 +265,40 @@ def main() -> int:
             "secid": quote["secid"],
             "history_secid": config_meta["history_secid"],
         }
-        bars, hist_host = fetch_history(meta)
-        history_hosts[quote["code"]] = hist_host
+
+        bars: list[dict[str, Any]] = []
+        hist_host: str | None = None
+        history_status = "fresh"
+        try:
+            bars, hist_host = fetch_history(meta)
+            history_hosts[quote["code"]] = hist_host
+            _atomic_write_json(
+                HISTORY_DIR / f"{quote['code']}.json",
+                {
+                    "code": quote["code"],
+                    "name": quote["name"],
+                    "secid": quote["secid"],
+                    "history_secid": meta["history_secid"],
+                    "source": "eastmoney:push2his",
+                    "source_host": hist_host,
+                    "checked_at": checked_at,
+                    "bars": bars,
+                },
+            )
+        except Exception as exc:  # history is an enhancement; realtime remains authoritative
+            history_errors[quote["code"]] = str(exc)[:500]
+            cached_path = HISTORY_DIR / f"{quote['code']}.json"
+            if cached_path.exists():
+                try:
+                    cached = json.loads(cached_path.read_text(encoding="utf-8"))
+                    bars = cached.get("bars") or []
+                    history_status = "cached"
+                    history_hosts[quote["code"]] = str(cached.get("source_host") or "cached")
+                except Exception:
+                    history_status = "unavailable"
+            else:
+                history_status = "unavailable"
+
         high_120d, high_date = _rolling_high(bars, _num(quote.get("high")), 120)
         price = _num(quote.get("price"))
         drawdown = None
@@ -274,25 +307,12 @@ def main() -> int:
 
         item = {
             **quote,
+            "history_status": history_status,
             "high_120d": _round(high_120d),
             "high_120d_date": high_date,
             "drawdown_from_120d_high_pct": _round(drawdown, 3),
         }
         latest_items.append(item)
-
-        _atomic_write_json(
-            HISTORY_DIR / f"{quote['code']}.json",
-            {
-                "code": quote["code"],
-                "name": quote["name"],
-                "secid": quote["secid"],
-                "history_secid": meta["history_secid"],
-                "source": "eastmoney:push2his",
-                "source_host": hist_host,
-                "checked_at": checked_at,
-                "bars": bars,
-            },
-        )
 
     payload = {
         "source": "eastmoney:push2",
@@ -302,6 +322,7 @@ def main() -> int:
         "market_phase": _market_phase(now),
         "indices": latest_items,
         "history_hosts": history_hosts,
+        "history_errors": history_errors,
     }
     _atomic_write_json(LATEST_PATH, payload)
 
