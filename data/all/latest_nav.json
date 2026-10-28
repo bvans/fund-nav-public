@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T04:40:33+08:00",
+  "generated_at": "2026-10-29T06:41:57+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 22924,
   "newest_bulk_nav_date": "2026-10-28",
@@ -25931,7 +25931,7 @@
       "nav_date": "2026-10-27",
       "unit_nav": 1.1247,
       "accum_nav": 1.3622,
-      "source": "eastmoney:lsjz-repair"
+      "source": "eastmoney:bulk-daily"
     },
     {
       "code": "005371",
