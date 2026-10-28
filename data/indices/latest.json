@@ -1,7 +1,7 @@
 {
   "source": "eastmoney:push2",
   "source_host": "push2delay.eastmoney.com",
-  "checked_at": "2026-10-28T17:55:24+08:00",
+  "checked_at": "2026-10-28T21:33:57+08:00",
   "timezone": "Asia/Shanghai",
   "market_phase": "closed",
   "indices": [
@@ -225,7 +225,7 @@
     "000688": "proxy.finance.qq.com"
   },
   "history_errors": {
-    "000510": "all Eastmoney hosts failed: Eastmoney returned empty data: {'rc': 100, 'rt': 1, 'svr': 181670099, 'lt': 2, 'full': 1, 'dlmkts': '8,10,128', 'dsc': '0', 'data': None}",
+    "000510": "all Eastmoney hosts failed: Eastmoney returned empty data: {'rc': 100, 'rt': 1, 'svr': 177542527, 'lt': 2, 'full': 1, 'dlmkts': '8,10,128', 'dsc': '0', 'data': None}",
     "000852": "Eastmoney push2his disabled after an earlier failure in this run",
     "000300": "Eastmoney push2his disabled after an earlier failure in this run",
     "000905": "Eastmoney push2his disabled after an earlier failure in this run",
