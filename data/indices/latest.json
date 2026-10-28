@@ -1,7 +1,7 @@
 {
   "source": "eastmoney:push2",
   "source_host": "push2delay.eastmoney.com",
-  "checked_at": "2026-10-28T21:33:57+08:00",
+  "checked_at": "2026-10-28T21:58:07+08:00",
   "timezone": "Asia/Shanghai",
   "market_phase": "closed",
   "indices": [
@@ -225,7 +225,7 @@
     "000688": "proxy.finance.qq.com"
   },
   "history_errors": {
-    "000510": "all Eastmoney hosts failed: Eastmoney returned empty data: {'rc': 100, 'rt': 1, 'svr': 177542527, 'lt': 2, 'full': 1, 'dlmkts': '8,10,128', 'dsc': '0', 'data': None}",
+    "000510": "all Eastmoney hosts failed: Server error '502 Bad Gateway' for url 'https://push2delay.eastmoney.com/api/qt/stock/kline/get?secid=2.000510&klt=101&fqt=0&lmt=130&end=20500101&fields1=f1%2Cf2%2Cf3%2Cf4%2Cf5%2Cf6&fields2=f51%2Cf52%2Cf53%2Cf54%2Cf55%2Cf56%2Cf57%2Cf58%2Cf59%2Cf60%2Cf61&ut=7eea3edcaed734bea9cbfc24409ed989'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502",
     "000852": "Eastmoney push2his disabled after an earlier failure in this run",
     "000300": "Eastmoney push2his disabled after an earlier failure in this run",
     "000905": "Eastmoney push2his disabled after an earlier failure in this run",
