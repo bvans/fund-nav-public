@@ -3,8 +3,9 @@ name: Fetch Eastmoney index quotes
 on:
   workflow_dispatch:
   schedule:
-    # Asia/Shanghai 11:20, 14:45, 15:10 on weekdays; allow time for 11:35 monitoring.
-    - cron: "20 3 * * 1-5"
+    # Asia/Shanghai 11:17, 11:27, 14:45, 15:10 on weekdays; allow time for 11:35 monitoring.
+    - cron: "17 3 * * 1-5"
+    - cron: "27 3 * * 1-5"
     - cron: "45 6 * * 1-5"
     - cron: "10 7 * * 1-5"
   push:
@@ -22,7 +23,7 @@ permissions:
 
 concurrency:
   group: index-data-write
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   fetch-index-quotes:
@@ -47,7 +48,18 @@ jobs:
         run: python -m unittest tests.test_index_quotes -v
 
       - name: Fetch Eastmoney index quotes
-        run: python fetch_index_quotes.py
+        shell: bash
+        run: |
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            if python fetch_index_quotes.py && python -c 'import json,datetime; d=json.load(open("data/indices/latest.json")); r=next(x for x in d["indices"] if x["code"]=="000852"); now=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))); t=datetime.datetime.fromisoformat(r["source_time"]); assert d["source"]=="eastmoney:push2" and r["source_date"]==now.date().isoformat() and r["price"] is not None and r["pct_change"] is not None and 0<=(now-t).total_seconds()<=7200, "stale or invalid quote"; print("Verified",r["price"],t)'; then
+              exit 0
+            fi
+            echo "::warning::Attempt $attempt failed or quote stale"
+            if [ "$attempt" -lt 3 ]; then sleep 30; fi
+          done
+          echo "::error::Eastmoney quote not fresh after retries"
+          exit 1
 
       - name: Commit index data
         shell: bash
