@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T04:11:18+08:00",
+  "generated_at": "2026-10-31T06:30:05+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23624,
   "newest_bulk_nav_date": "2026-10-30",
@@ -34857,7 +34857,7 @@
       "name": "兴银中短债A",
       "type": "债券型-中短债",
       "nav_date": "2026-10-30",
-      "unit_nav": 1.267267,
+      "unit_nav": 1.2673,
       "accum_nav": 1.2673,
       "source": "eastmoney:bulk-daily"
     },
