@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-04T05:20:12+08:00",
+  "generated_at": "2026-11-04T07:30:37+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 22935,
+  "fund_count": 22937,
   "newest_bulk_nav_date": "2026-11-03",
   "funds": [
     {
@@ -190649,6 +190649,24 @@
       "nav_date": "2026-11-03",
       "unit_nav": 1.0078,
       "accum_nav": 1.0078,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029043",
+      "name": "工银中证港股通医疗主题ETF发起式联接A",
+      "type": "指数型-股票",
+      "nav_date": "2026-11-03",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029044",
+      "name": "工银中证港股通医疗主题ETF发起式联接C",
+      "type": "指数型-股票",
+      "nav_date": "2026-11-03",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
       "source": "eastmoney:bulk-daily"
     },
     {
