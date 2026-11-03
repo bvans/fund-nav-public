@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T07:15:31+08:00",
+  "generated_at": "2026-11-03T09:07:26+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23631,
   "newest_bulk_nav_date": "2026-11-02",
@@ -79665,7 +79665,7 @@
     },
     {
       "code": "012732",
-      "name": "融通通跃一年定开债发起式",
+      "name": "融通通跃一年定开债券发起式",
       "type": "债券型-长债",
       "nav_date": "2026-11-02",
       "unit_nav": 1.0804,
@@ -195514,7 +195514,7 @@
     {
       "code": "028803",
       "name": "安信稳健多策略三个月持有混合(FOF)A",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-10-30",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -195523,7 +195523,7 @@
     {
       "code": "028804",
       "name": "安信稳健多策略三个月持有混合(FOF)C",
-      "type": "FOF-均衡型",
+      "type": "FOF-稳健型",
       "nav_date": "2026-10-30",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -196837,7 +196837,7 @@
     {
       "code": "029223",
       "name": "联博汇嘉63个月封闭债券",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-11-02",
       "unit_nav": 1.0001,
       "accum_nav": 1.0001,
