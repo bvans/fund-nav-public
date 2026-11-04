@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T05:34:04+08:00",
+  "generated_at": "2026-11-05T07:46:08+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 22943,
   "newest_bulk_nav_date": "2026-11-04",
@@ -74060,7 +74060,7 @@
       "code": "012380",
       "name": "创金合信港股互联网3个月持有期混合(QDII)C",
       "type": "QDII-混合偏股",
-      "nav_date": "2026-11-04",
+      "nav_date": "2026-11-03",
       "unit_nav": 0.5002,
       "accum_nav": 0.5002,
       "source": "eastmoney:lsjz-repair"
@@ -190493,19 +190493,19 @@
       "code": "028982",
       "name": "路博迈红利量化选股股票A",
       "type": "股票型",
-      "nav_date": "2026-11-03",
+      "nav_date": "2026-11-04",
       "unit_nav": 0.9997,
       "accum_nav": 0.9997,
-      "source": "eastmoney:lsjz-repair"
+      "source": "eastmoney:bulk-daily"
     },
     {
       "code": "028983",
       "name": "路博迈红利量化选股股票C",
       "type": "股票型",
-      "nav_date": "2026-11-03",
-      "unit_nav": 0.9995,
-      "accum_nav": 0.9995,
-      "source": "eastmoney:lsjz-repair"
+      "nav_date": "2026-11-04",
+      "unit_nav": 0.9994,
+      "accum_nav": 0.9994,
+      "source": "eastmoney:bulk-daily"
     },
     {
       "code": "028984",
@@ -191230,7 +191230,7 @@
     {
       "code": "029536",
       "name": "融通通跃一年定开债券发起式C",
-      "type": "债券型-长债",
+      "type": "",
       "nav_date": "2026-11-04",
       "unit_nav": 1.081,
       "accum_nav": 1.081,
