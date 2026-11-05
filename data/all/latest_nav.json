@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T05:37:42+08:00",
+  "generated_at": "2026-11-06T07:44:06+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 22948,
+  "fund_count": 22950,
   "newest_bulk_nav_date": "2026-11-05",
   "funds": [
     {
@@ -191252,6 +191252,24 @@
       "nav_date": "2026-11-05",
       "unit_nav": 1.0954,
       "accum_nav": 1.0954,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029522",
+      "name": "永赢化工产业慧选混合发起A",
+      "type": "混合型-偏股",
+      "nav_date": "2026-11-05",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029523",
+      "name": "永赢化工产业慧选混合发起C",
+      "type": "混合型-偏股",
+      "nav_date": "2026-11-05",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
       "source": "eastmoney:bulk-daily"
     },
     {
