@@ -10,6 +10,8 @@ on:
       timezone: "Asia/Shanghai"
     - cron: "10 15 * * 1-5"
       timezone: "Asia/Shanghai"
+    - cron: "20 21 * * 1-5"
+      timezone: "Asia/Shanghai"
   push:
     branches:
       - main
