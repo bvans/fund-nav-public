@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T05:06:45+08:00",
+  "generated_at": "2026-11-07T07:18:14+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23662,
   "newest_bulk_nav_date": "2026-11-06",
@@ -511,7 +511,7 @@
     {
       "code": "000080",
       "name": "天治可转债增强债券A",
-      "type": "债券型-混合二级",
+      "type": "债券型-混合一级",
       "nav_date": "2026-11-06",
       "unit_nav": 1.3721,
       "accum_nav": 1.3721,
@@ -520,7 +520,7 @@
     {
       "code": "000081",
       "name": "天治可转债增强债券C",
-      "type": "债券型-混合二级",
+      "type": "债券型-混合一级",
       "nav_date": "2026-11-06",
       "unit_nav": 1.3028,
       "accum_nav": 1.3028,
@@ -197017,7 +197017,7 @@
     {
       "code": "029229",
       "name": "鹏安安瑞63个月封闭式债券",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-11-06",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
@@ -197548,7 +197548,7 @@
     {
       "code": "029720",
       "name": "银华长丰混合发起式C",
-      "type": "",
+      "type": "混合型-偏股",
       "nav_date": "2026-11-06",
       "unit_nav": 1.6553,
       "accum_nav": 1.6553,
@@ -197557,7 +197557,7 @@
     {
       "code": "029725",
       "name": "华泰柏瑞消费成长混合C",
-      "type": "",
+      "type": "混合型-灵活",
       "nav_date": "2026-11-06",
       "unit_nav": 3.037,
       "accum_nav": 3.037,
