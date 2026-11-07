@@ -25,22 +25,36 @@ def main():
 
     now = datetime.now(CST)
     t = datetime.fromisoformat(source_time)
-    if source_date != now.date().isoformat():
-        raise SystemExit(f"stale quote date: {source_date}, today={now.date().isoformat()}")
-
     age = (now - t).total_seconds()
     hm = now.hour * 60 + now.minute
+    source_hm = t.hour * 60 + t.minute
+    today = now.date().isoformat()
 
-    # Intraday runs should be reasonably fresh.
-    if 9 * 60 <= hm < 15 * 60 + 30:
-        if age < -300 or age > 3600:
-            raise SystemExit(f"intraday quote too old: age={age:.0f}s")
-    else:
-        # After close, same-day final quote is valid even if GitHub's scheduled
-        # runner starts hours late. Require the source itself to be post-close.
-        source_hm = t.hour * 60 + t.minute
+    if now.weekday() >= 5:
+        # Weekend: the latest valid A-share quote should normally be Friday's
+        # close. Accept only a recent prior close, never an arbitrary stale
+        # intraday quote.
+        days_old = (now.date() - t.date()).days
+        if source_date > today or days_old < 1 or days_old > 3:
+            raise SystemExit(
+                f"weekend quote date not plausible: source_date={source_date}, today={today}"
+            )
         if source_hm < 15 * 60:
-            raise SystemExit(f"after-close run has non-close quote: {source_time}")
+            raise SystemExit(f"weekend run has non-close quote: {source_time}")
+    else:
+        if source_date != today:
+            raise SystemExit(f"stale quote date: {source_date}, today={today}")
+
+        # Intraday runs should be reasonably fresh.
+        if 9 * 60 <= hm < 15 * 60 + 30:
+            if age < -300 or age > 3600:
+                raise SystemExit(f"intraday quote too old: age={age:.0f}s")
+        else:
+            # After close, same-day final quote is valid even if GitHub's
+            # scheduled runner starts hours late. Require the source itself to
+            # be post-close.
+            if source_hm < 15 * 60:
+                raise SystemExit(f"after-close run has non-close quote: {source_time}")
 
     print(
         f"Verified CSI1000 price={price}, pct={pct}, "
