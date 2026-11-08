@@ -36,7 +36,14 @@ SNAPSHOT_DIR = DATA_DIR / "snapshots"
 
 CST = timezone(timedelta(hours=8))
 EM_UT = "7eea3edcaed734bea9cbfc24409ed989"
-PUSH2_HOSTS = ("push2delay.eastmoney.com", "push2.eastmoney.com")
+PUSH2_HOSTS = (
+    "push2delay.eastmoney.com",
+    "push2.eastmoney.com",
+    "82.push2.eastmoney.com",
+    "72.push2.eastmoney.com",
+    "83.push2.eastmoney.com",
+    "7.push2.eastmoney.com",
+)
 PUSH2HIS_HOSTS = ("push2his.eastmoney.com", "push2delay.eastmoney.com")
 _EM_HISTORY_DISABLED = False
 
