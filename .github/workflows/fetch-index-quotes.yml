@@ -24,6 +24,7 @@ on:
       - "requirements.txt"
       - "tests/test_index_quotes.py"
       - "verify_index_quote.py"
+      - "trigger/index-refresh.txt"
       - ".github/workflows/fetch-index-quotes.yml"
 
 permissions:
