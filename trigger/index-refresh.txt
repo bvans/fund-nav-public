@@ -1,0 +1,3 @@
+Manual refresh trigger for index quote workflow.
+Update this file (for example, replace the timestamp line) and push to main to force a fresh Eastmoney quote fetch.
+Last manual trigger marker: bootstrap
