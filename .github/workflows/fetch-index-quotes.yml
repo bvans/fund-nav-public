@@ -91,7 +91,30 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          commit_and_push() {
+          # Preserve the already fetched + verified output. If main advances
+          # while we are running, do not hit Eastmoney again just to resolve
+          # a Git race.
+          rm -rf /tmp/generated-indices
+          cp -a data/indices /tmp/generated-indices
+
+          quote_epoch() {
+            python - "$1" <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          p = Path(sys.argv[1]) / "latest.json"
+          if not p.exists():
+              print(0)
+              raise SystemExit
+
+          data = json.loads(p.read_text(encoding="utf-8"))
+          row = next((x for x in data.get("indices", []) if x.get("code") == "000852"), None)
+          print(int((row or {}).get("source_epoch") or 0))
+          PY
+          }
+
+          publish_generated() {
             git add data/indices/
             if git diff --cached --quiet; then
               echo "No index quote changes."
@@ -101,24 +124,33 @@ jobs:
             git push origin HEAD:main
           }
 
-          if commit_and_push; then
+          if publish_generated; then
             exit 0
           fi
 
-          # Another refresh may have updated main while this run was fetching.
-          # Generated market data should be regenerated from the newest main
-          # instead of trying to rebase/merge competing generated JSON files.
-          for attempt in 2 3; do
-            echo "::warning::Push raced with another run; regenerating on latest main (attempt $attempt)"
+          generated_epoch="$(quote_epoch /tmp/generated-indices)"
+
+          # A concurrent/unrelated commit may move main after checkout.
+          # Rebase/merge of generated JSON is intentionally avoided.
+          for attempt in 2 3 4; do
+            echo "::warning::Publish raced with main; reconciling generated data (attempt $attempt)"
             git fetch origin main
             git reset --hard origin/main
-            python fetch_index_quotes.py
-            python verify_index_quote.py
-            if commit_and_push; then
+
+            remote_epoch="$(quote_epoch data/indices)"
+            if [ "$remote_epoch" -ge "$generated_epoch" ] && [ "$remote_epoch" -gt 0 ]; then
+              echo "Remote already contains the same or newer market quote; nothing to publish."
+              exit 0
+            fi
+
+            rm -rf data/indices
+            cp -a /tmp/generated-indices data/indices
+
+            if publish_generated; then
               exit 0
             fi
             sleep 2
           done
 
-          echo "::error::Could not publish index data after retrying on latest main"
+          echo "::error::Could not publish verified index data after retrying"
           exit 1
