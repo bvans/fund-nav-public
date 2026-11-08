@@ -3,9 +3,6 @@ name: Fetch Eastmoney index quotes
 on:
   workflow_dispatch:
   schedule:
-    # TEMP validation: 2026-11-07 14:14 Asia/Shanghai (remove after verified)
-    - cron: "14 14 7 11 *"
-      timezone: "Asia/Shanghai"
     # Explicit Shanghai timezone avoids manual UTC conversion ambiguity.
     - cron: "27 11 * * 1-5"
       timezone: "Asia/Shanghai"
@@ -32,7 +29,7 @@ permissions:
 
 concurrency:
   group: index-data-write
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   fetch-index-quotes:
@@ -76,13 +73,38 @@ jobs:
       - name: Commit index data
         shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/indices/
-          if git diff --cached --quiet; then
-            echo "No index quote changes."
+
+          commit_and_push() {
+            git add data/indices/
+            if git diff --cached --quiet; then
+              echo "No index quote changes."
+              return 0
+            fi
+            git commit -m "data: update Eastmoney index quotes"
+            git push origin HEAD:main
+          }
+
+          if commit_and_push; then
             exit 0
           fi
-          git commit -m "data: update Eastmoney index quotes"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          # Another refresh may have updated main while this run was fetching.
+          # Generated market data should be regenerated from the newest main
+          # instead of trying to rebase/merge competing generated JSON files.
+          for attempt in 2 3; do
+            echo "::warning::Push raced with another run; regenerating on latest main (attempt $attempt)"
+            git fetch origin main
+            git reset --hard origin/main
+            python fetch_index_quotes.py
+            python verify_index_quote.py
+            if commit_and_push; then
+              exit 0
+            fi
+            sleep 2
+          done
+
+          echo "::error::Could not publish index data after retrying on latest main"
+          exit 1
