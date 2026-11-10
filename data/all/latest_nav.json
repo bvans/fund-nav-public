@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-10T07:53:01+08:00",
+  "generated_at": "2026-11-10T09:39:24+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23667,
+  "fund_count": 23663,
   "newest_bulk_nav_date": "2026-11-09",
   "funds": [
     {
@@ -128327,15 +128327,6 @@
       "source": "eastmoney:bulk-daily"
     },
     {
-      "code": "019747",
-      "name": "华西优选价值混合发起A",
-      "type": "混合型-偏股",
-      "nav_date": "2026-11-09",
-      "unit_nav": 0.9702,
-      "accum_nav": 0.9702,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
       "code": "019748",
       "name": "金鹰周期优选混合C",
       "type": "混合型-灵活",
@@ -128936,24 +128927,6 @@
       "nav_date": "2026-11-09",
       "unit_nav": 2.3349,
       "accum_nav": 2.3349,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "019831",
-      "name": "华夏中证智选300价值稳健策略ETF发起式联接A",
-      "type": "指数型-股票",
-      "nav_date": "2026-11-09",
-      "unit_nav": 1.3097,
-      "accum_nav": 1.3097,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "019832",
-      "name": "华夏中证智选300价值稳健策略ETF发起式联接C",
-      "type": "指数型-股票",
-      "nav_date": "2026-11-09",
-      "unit_nav": 1.3058,
-      "accum_nav": 1.3058,
       "source": "eastmoney:bulk-daily"
     },
     {
@@ -174134,15 +174107,6 @@
       "nav_date": "2026-11-09",
       "unit_nav": 0.7011,
       "accum_nav": 0.7011,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "025470",
-      "name": "华西优选价值混合发起C",
-      "type": "混合型-偏股",
-      "nav_date": "2026-11-09",
-      "unit_nav": 0.9645,
-      "accum_nav": 0.9645,
       "source": "eastmoney:bulk-daily"
     },
     {
