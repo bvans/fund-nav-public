@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T06:19:36+08:00",
+  "generated_at": "2026-11-12T08:50:43+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 22960,
   "newest_bulk_nav_date": "2026-11-11",
@@ -110294,7 +110294,7 @@
       "code": "017653",
       "name": "创金合信全球芯片产业股票发起(QDII)A",
       "type": "QDII-普通股票",
-      "nav_date": "2026-11-11",
+      "nav_date": "2026-11-10",
       "unit_nav": 1.7425,
       "accum_nav": 1.7425,
       "source": "eastmoney:lsjz-repair"
