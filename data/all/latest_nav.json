@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-14T05:41:08+08:00",
+  "generated_at": "2026-11-14T07:41:23+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23694,
+  "fund_count": 23693,
   "newest_bulk_nav_date": "2026-11-13",
   "funds": [
     {
@@ -113849,7 +113849,7 @@
       "code": "017654",
       "name": "创金合信全球芯片产业股票发起(QDII)C",
       "type": "QDII-普通股票",
-      "nav_date": "2026-11-13",
+      "nav_date": "2026-11-12",
       "unit_nav": 1.8103,
       "accum_nav": 1.8103,
       "source": "eastmoney:lsjz-repair"
@@ -186599,15 +186599,6 @@
       "nav_date": "2026-11-13",
       "unit_nav": 0.8799,
       "accum_nav": 0.8799,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "027162",
-      "name": "创金合信多资产盈睿平衡3个月持有期混合发起(FOF)A",
-      "type": "FOF-均衡型",
-      "nav_date": "2026-11-13",
-      "unit_nav": 0.8259,
-      "accum_nav": 0.8259,
       "source": "eastmoney:bulk-daily"
     },
     {
