@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T07:52:34+08:00",
+  "generated_at": "2026-11-17T09:54:43+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23702,
   "newest_bulk_nav_date": "2026-11-16",
@@ -114875,18 +114875,18 @@
       "code": "017824",
       "name": "华安新材料主题股票发起式A",
       "type": "股票型",
-      "nav_date": "2026-11-16",
+      "nav_date": "2026-11-13",
       "unit_nav": 1.3092,
-      "accum_nav": null,
+      "accum_nav": 1.3092,
       "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "017825",
       "name": "华安新材料主题股票发起式C",
       "type": "股票型",
-      "nav_date": "2026-11-16",
+      "nav_date": "2026-11-13",
       "unit_nav": 1.2898,
-      "accum_nav": null,
+      "accum_nav": 1.2898,
       "source": "eastmoney:lsjz-repair"
     },
     {
