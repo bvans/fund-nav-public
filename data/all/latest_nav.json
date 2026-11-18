@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T07:12:22+08:00",
+  "generated_at": "2026-11-18T09:01:25+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 22990,
+  "fund_count": 22994,
   "newest_bulk_nav_date": "2026-11-17",
   "funds": [
     {
@@ -190409,6 +190409,24 @@
       "source": "eastmoney:bulk-daily"
     },
     {
+      "code": "028902",
+      "name": "银华聚衡稳健添益三个月持有期混合(FOF)A",
+      "type": "FOF-均衡型",
+      "nav_date": "2026-11-17",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "028903",
+      "name": "银华聚衡稳健添益三个月持有期混合(FOF)C",
+      "type": "FOF-均衡型",
+      "nav_date": "2026-11-17",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
       "code": "028910",
       "name": "华泰柏瑞中证工业有色金属主题ETF发起式联接A",
       "type": "指数型-股票",
@@ -191645,6 +191663,24 @@
       "code": "029701",
       "name": "先锋瑞盈增利债券发起C",
       "type": "债券型-混合二级",
+      "nav_date": "2026-11-17",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029712",
+      "name": "南方中证红利低波动100ETF发起联接A",
+      "type": "指数型-股票",
+      "nav_date": "2026-11-17",
+      "unit_nav": 1.0,
+      "accum_nav": 1.0,
+      "source": "eastmoney:bulk-daily"
+    },
+    {
+      "code": "029713",
+      "name": "南方中证红利低波动100ETF发起联接C",
+      "type": "指数型-股票",
       "nav_date": "2026-11-17",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
