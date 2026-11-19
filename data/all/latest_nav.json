@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T06:44:01+08:00",
+  "generated_at": "2026-11-19T08:31:02+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 22999,
+  "fund_count": 22997,
   "newest_bulk_nav_date": "2026-11-18",
   "funds": [
     {
@@ -83090,24 +83090,6 @@
       "nav_date": "2026-11-18",
       "unit_nav": 0.9887,
       "accum_nav": 0.9887,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "013636",
-      "name": "国投瑞银策略回报混合A",
-      "type": "混合型-偏股",
-      "nav_date": "2026-11-18",
-      "unit_nav": 0.9909,
-      "accum_nav": 0.9909,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "013637",
-      "name": "国投瑞银策略回报混合C",
-      "type": "混合型-偏股",
-      "nav_date": "2026-11-18",
-      "unit_nav": 0.9712,
-      "accum_nav": 0.9712,
       "source": "eastmoney:bulk-daily"
     },
     {
