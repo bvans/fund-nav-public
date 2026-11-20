@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:47:26+08:00",
+  "generated_at": "2026-11-20T08:42:29+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 22988,
   "newest_bulk_nav_date": "2026-11-19",
@@ -191608,7 +191608,7 @@
     {
       "code": "029610",
       "name": "东财悦安63个月封闭式债券",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-11-19",
       "unit_nav": 1.0001,
       "accum_nav": 1.0001,
