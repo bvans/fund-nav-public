@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:25:05+08:00",
+  "generated_at": "2026-11-21T08:03:57+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23733,
   "newest_bulk_nav_date": "2026-11-20",
@@ -136204,7 +136204,7 @@
     {
       "code": "020794",
       "name": "诺安聚利债券D",
-      "type": "",
+      "type": "债券型-长债",
       "nav_date": "2026-11-20",
       "unit_nav": 1.4076,
       "accum_nav": 1.4076,
