@@ -1,0 +1,96 @@
+name: Geonode proxy benchmark
+
+on:
+  push:
+    paths:
+      - ".github/workflows/geonode-proxy-benchmark.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Probe proxy protocols and speed
+        shell: bash
+        run: |
+          set +e
+          output_file=proxy-results.csv
+          printf 'proxy,mode,connect_exit,connect_http,time_to_first_byte_s,download_exit,download_http,download_seconds,download_bytes_per_second\n' > "$output_file"
+
+          probe() {
+            local proxy="$1"
+            local mode="$2"
+            local safe
+            safe="$(printf '%s' "$proxy" | sed 's#://#_#; s#[^a-zA-Z0-9_.-]#_#g')"
+            local trace_file
+            trace_file="$(mktemp)"
+            local down_file
+            down_file="$(mktemp)"
+
+            curl -4 -L --max-time 35 --connect-timeout 15 -sS -x "$proxy" \
+              -o "$trace_file" \
+              -w '%{http_code},%{time_starttransfer}' \
+              'https://www.cloudflare.com/cdn-cgi/trace' > connect.meta 2> connect.err
+            local connect_exit=$?
+            local connect_http=000
+            local ttfb=0
+            if [ -s connect.meta ]; then
+              IFS=, read -r connect_http ttfb < connect.meta
+            fi
+            if [ "$connect_exit" -eq 0 ] && [ "$connect_http" = "200" ]; then
+              local download_meta
+              download_meta="$(curl -4 -L --max-time 60 --connect-timeout 15 -sS -x "$proxy" \
+                -H 'Accept-Encoding: identity' \
+                -o "$down_file" \
+                -w '%{http_code},%{time_total},%{size_download},%{speed_download}' \
+                "https://speed.cloudflare.com/__down?bytes=5000000&probe=$(date +%s%N)" 2> download.err)"
+              local download_exit=$?
+              local download_http=000
+              local seconds=0
+              local bytes=0
+              local bps=0
+              if [ -n "$download_meta" ]; then
+                IFS=, read -r download_http seconds bytes bps <<< "$download_meta"
+              fi
+            else
+              local download_exit=99
+              local download_http=000
+              local seconds=0
+              local bytes=0
+              local bps=0
+            fi
+            printf '%s,%s,%s,%s,%s,%s,%s,%s,%s\n' "$mode" "$proxy" "$connect_exit" "$connect_http" "$ttfb" "$download_exit" "$download_http" "$seconds" "$bps" >> "$output_file"
+            printf '%-18s %-34s HTTPS_CONNECT=%s HTTP=%s TTFB=%ss download=%s HTTP=%s bytes=%s time=%ss speed=%s B/s\n' \
+              "$mode" "$proxy" "$connect_exit" "$connect_http" "$ttfb" "$download_exit" "$download_http" "$bytes" "$seconds" "$bps"
+            rm -f "$trace_file" "$down_file" connect.meta connect.err download.err
+          }
+
+          probe 'http://178.250.88.50:8080' '178-http'
+          probe 'http://31.57.154.251:8082' '31-http'
+          probe 'https://31.57.154.251:8082' '31-https'
+          probe 'http://193.111.78.67:3128' '193-http'
+          probe 'https://193.111.78.67:3128' '193-https'
+          probe 'socks5h://46.245.163.207:1080' '46-socks5'
+          probe 'socks5h://188.132.249.166:1080' '188-socks5'
+
+          {
+            echo '## Geonode proxy benchmark'
+            echo
+            echo 'HTTPS CONNECT was tested by fetching a Cloudflare HTTPS endpoint through each proxy. Download speed uses a 5,000,000-byte Cloudflare speed-test response.'
+            echo
+            echo 'Results are from this GitHub Actions runner and reflect this run only.'
+            echo
+            echo '~~~csv'
+            cat "$output_file"
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Save results
+        uses: actions/upload-artifact@v4
+        with:
+          name: geonode-proxy-benchmark
+          path: proxy-results.csv
+          if-no-files-found: error
