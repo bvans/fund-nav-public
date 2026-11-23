@@ -19,7 +19,7 @@ jobs:
         run: |
           set +e
           output_file=proxy-results.csv
-          printf 'proxy,mode,connect_exit,connect_http,time_to_first_byte_s,download_exit,download_http,download_seconds,download_bytes_per_second\n' > "$output_file"
+          printf 'mode,proxy,connect_exit,connect_http,time_to_first_byte_s,download_exit,download_http,download_seconds,download_bytes_per_second\n' > "$output_file"
 
           probe() {
             local proxy="$1"
