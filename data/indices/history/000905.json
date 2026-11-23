@@ -5,21 +5,8 @@
   "history_secid": "2.000905",
   "source": "tencent:newfqkline",
   "source_host": "proxy.finance.qq.com",
-  "checked_at": "2026-11-21T05:25:20+08:00",
+  "checked_at": "2026-11-23T21:18:53+08:00",
   "bars": [
-    {
-      "date": "2026-05-14",
-      "open": 8952.95,
-      "close": 8670.16,
-      "high": 8956.66,
-      "low": 8670.16,
-      "volume": 289502566.0,
-      "amount": 658225134900.0,
-      "amplitude_pct": null,
-      "pct_change": null,
-      "change": null,
-      "turnover_pct": null
-    },
     {
       "date": "2026-05-15",
       "open": 8676.62,
@@ -1692,6 +1679,19 @@
       "low": 6006.08,
       "volume": 134811698.0,
       "amount": 232981332300.0,
+      "amplitude_pct": null,
+      "pct_change": null,
+      "change": null,
+      "turnover_pct": null
+    },
+    {
+      "date": "2026-11-23",
+      "open": 5932.57,
+      "close": 6128.99,
+      "high": 6161.46,
+      "low": 5899.96,
+      "volume": 138706291.0,
+      "amount": 257760096100.0,
       "amplitude_pct": null,
       "pct_change": null,
       "change": null,
