@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T10:37:57+08:00",
+  "generated_at": "2026-11-24T12:00:18+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23740,
   "newest_bulk_nav_date": "2026-11-23",
@@ -30941,9 +30941,9 @@
       "code": "005976",
       "name": "长信稳进资产配置(FOF)",
       "type": "FOF-均衡型",
-      "nav_date": "2026-11-20",
-      "unit_nav": 1.2938,
-      "accum_nav": 1.3328,
+      "nav_date": "2026-11-23",
+      "unit_nav": 1.2937,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
