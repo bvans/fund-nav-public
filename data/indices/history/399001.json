@@ -5,7 +5,7 @@
   "history_secid": "0.399001",
   "source": "tencent:newfqkline",
   "source_host": "proxy.finance.qq.com",
-  "checked_at": "2026-11-24T11:40:00+08:00",
+  "checked_at": "2026-11-24T21:59:43+08:00",
   "bars": [
     {
       "date": "2026-05-18",
@@ -1687,11 +1687,11 @@
     {
       "date": "2026-11-24",
       "open": 10708.62,
-      "close": 10550.87,
+      "close": 10423.6,
       "high": 10729.13,
-      "low": 10534.89,
-      "volume": 391472757.0,
-      "amount": 608825650000.0,
+      "low": 10418.11,
+      "volume": 590663196.0,
+      "amount": 883224915500.0,
       "amplitude_pct": null,
       "pct_change": null,
       "change": null,
