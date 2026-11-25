@@ -2,3 +2,4 @@ Manual refresh trigger for index quote workflow.
 Update this file (for example, replace the timestamp line) and push to main to force a fresh Eastmoney quote fetch.
 Last manual trigger marker: 2026-11-16 17:07 Asia/Shanghai ChatGPT request
 Refresh requested: 2026-11-24 11:39 Asia/Shanghai
+Manual refresh: 2026-11-25 11:35 Asia/Shanghai
