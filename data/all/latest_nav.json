@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T08:10:12+08:00",
+  "generated_at": "2026-11-25T10:35:44+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
   "fund_count": 23019,
   "newest_bulk_nav_date": "2026-11-24",
@@ -48455,9 +48455,9 @@
       "code": "008863",
       "name": "中银证券汇兴定期开放债券",
       "type": "债券型-长债",
-      "nav_date": "2026-11-23",
-      "unit_nav": 1.0563,
-      "accum_nav": 1.2362,
+      "nav_date": "2026-11-24",
+      "unit_nav": 1.0562,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
@@ -62909,9 +62909,9 @@
       "code": "010946",
       "name": "中银证券汇福一年定开债券发起式",
       "type": "债券型-信用债",
-      "nav_date": "2026-11-23",
-      "unit_nav": 1.0197,
-      "accum_nav": 1.1915,
+      "nav_date": "2026-11-24",
+      "unit_nav": 1.0194,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
@@ -100970,18 +100970,18 @@
       "code": "016212",
       "name": "中银证券安添3个月定开债A",
       "type": "债券型-长债",
-      "nav_date": "2026-11-23",
-      "unit_nav": 1.0984,
-      "accum_nav": 1.1434,
+      "nav_date": "2026-11-24",
+      "unit_nav": 1.0985,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
       "code": "016213",
       "name": "中银证券安添3个月定开债C",
       "type": "债券型-长债",
-      "nav_date": "2026-11-23",
-      "unit_nav": 1.0923,
-      "accum_nav": 1.1373,
+      "nav_date": "2026-11-24",
+      "unit_nav": 1.0924,
+      "accum_nav": null,
       "source": "eastmoney:lsjz-repair"
     },
     {
