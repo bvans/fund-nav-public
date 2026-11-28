@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-28T07:47:00+08:00",
+  "generated_at": "2026-11-28T09:30:15+08:00",
   "coverage": "open-ended public funds from Eastmoney/AKShare; delayed/QDII recent history repaired from Eastmoney lsjz",
-  "fund_count": 23763,
+  "fund_count": 23761,
   "newest_bulk_nav_date": "2026-11-27",
   "funds": [
     {
@@ -58745,24 +58745,6 @@
       "nav_date": "2026-11-27",
       "unit_nav": 1.0101,
       "accum_nav": 1.0101,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "009937",
-      "name": "东方欣益一年持有期混合A",
-      "type": "混合型-偏债",
-      "nav_date": "2026-11-27",
-      "unit_nav": 0.8904,
-      "accum_nav": 0.9404,
-      "source": "eastmoney:bulk-daily"
-    },
-    {
-      "code": "009938",
-      "name": "东方欣益一年持有期混合C",
-      "type": "混合型-偏债",
-      "nav_date": "2026-11-27",
-      "unit_nav": 0.8629,
-      "accum_nav": 0.9129,
       "source": "eastmoney:bulk-daily"
     },
     {
@@ -198223,7 +198205,7 @@
     {
       "code": "029567",
       "name": "泉果泰元63个月封闭债券",
-      "type": "债券型-长债",
+      "type": "",
       "nav_date": "2026-11-27",
       "unit_nav": 1.0001,
       "accum_nav": 1.0001,
@@ -198511,7 +198493,7 @@
     {
       "code": "030624",
       "name": "鹏华丰启债券C",
-      "type": "债券型-长债",
+      "type": "",
       "nav_date": "2026-11-27",
       "unit_nav": 1.0,
       "accum_nav": 1.0,
